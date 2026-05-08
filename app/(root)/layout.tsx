@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar"
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="mx-auto mt-2 mb-2 max-w-7xl w-[95%] flex flex-col gap-2">
+    <div className="mx-auto pt-2 pb-2 max-w-7xl w-[95%] h-screen flex flex-col gap-2">
       {/* navigation */}
       <div className="border border-white/50 rounded-3xl px-4 py-3 flex justify-between items-center">
         <div className="text-3xl">
@@ -12,7 +12,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <NavBar />
       </div>
       {/* content */}
-      <div>
+      <div className="border border-white/50 rounded-2xl flex-1 px-4 py-2">
         {children}
       </div>
     </div>
