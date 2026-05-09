@@ -17,7 +17,7 @@ const NavBar = () => {
   const [activeTab, setActiveTab] = useState(navItems[0].name)
 
   return (
-    <div className="w-fit border border-white/50 rounded-3xl flex gap-1 p-1">
+    <div className="w-fit border border-foreground/30 bg-background rounded-3xl flex gap-1 p-1">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
@@ -25,14 +25,14 @@ const NavBar = () => {
           href={nav.href}
           onClick={() => setActiveTab(nav.name)}
           className={`${activeTab === nav.name
-            ? '' : 'hover:text-white/50'
-            }  relative`}
+            ? '' : 'hover:text-foreground/50'
+            }  relative rounded-3xl`}
         >
           {/* pill */}
           {activeTab === nav.name &&
             <motion.div
               layoutId="active-pill"
-              className="absolute inset-0 z-10 bg-stone-300 mix-blend-difference"
+              className="absolute inset-0 bg-foreground"
               style={{
                 borderRadius: 9999
               }}
@@ -41,7 +41,7 @@ const NavBar = () => {
           }
 
           {/* text */}
-          <div className="px-3 py-1">
+          <div className="relative z-10 px-3 py-1 text-white mix-blend-difference">
             {nav.name}
           </div>
         </Link>
