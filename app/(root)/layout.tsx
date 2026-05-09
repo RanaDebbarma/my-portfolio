@@ -16,7 +16,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
         {/* content */}
         <div
-          className="border border-foreground/20 bg-secondary/6 shadow-md rounded-2xl flex-1 px-4 py-2"
+          className="overflow-y-auto border border-foreground/20 bg-secondary/6 shadow-md rounded-2xl flex-1 px-4 py-2"
         >
           {children}
         </div>
