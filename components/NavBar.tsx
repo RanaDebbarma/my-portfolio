@@ -17,7 +17,7 @@ const NavBar = () => {
   const [activeTab, setActiveTab] = useState(navItems[0].name)
 
   return (
-    <div className="w-fit border border-foreground/30 bg-background rounded-3xl flex gap-1 p-1">
+    <div className="w-fit border border-foreground/20 bg-background inset-shadow-[0_2px_4px_rgba(0,0,0,0.2)] rounded-3xl flex gap-1 p-1">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
