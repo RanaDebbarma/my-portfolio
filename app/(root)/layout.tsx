@@ -1,5 +1,3 @@
-"use client"
-
 import NavBar from "@/components/NavBar"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

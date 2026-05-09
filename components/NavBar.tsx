@@ -37,6 +37,7 @@ const NavBar = () => {
                 borderRadius: 9999
               }}
             // transition={{duration: 5}}
+            animate={{ scale: [1, 0.9, 1] }}
             />
           }
 
