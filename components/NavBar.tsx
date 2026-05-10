@@ -17,16 +17,14 @@ const NavBar = () => {
   const [activeTab, setActiveTab] = useState(navItems[0].name)
 
   return (
-    <div className="w-fit border border-foreground/20 bg-background inset-shadow-[0_2px_4px_rgba(0,0,0,0.2)] rounded-3xl flex gap-1 p-1">
+    <div className="w-fit border border-foreground/10 bg-background concave rounded-3xl flex gap-1 p-1">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
           key={nav.href}
           href={nav.href}
           onClick={() => setActiveTab(nav.name)}
-          className={`${activeTab === nav.name
-            ? '' : 'hover:text-foreground/50'
-            }  relative rounded-3xl`}
+          className="relative rounded-3xl"
         >
           {/* pill */}
           {activeTab === nav.name &&
@@ -36,13 +34,15 @@ const NavBar = () => {
               style={{
                 borderRadius: 9999
               }}
-            // transition={{duration: 5}}
-            animate={{ scale: [1, 0.9, 1] }}
+              // transition={{duration: 5}}
+              animate={{ scale: [1, 0.9, 1] }}
             />
           }
 
           {/* text */}
-          <div className="relative z-10 px-3 py-1 text-white mix-blend-difference">
+          <div className={`${activeTab === nav.name
+            ? '' : 'hover:text-muted'
+            } relative z-10 px-3 py-1 text-white mix-blend-difference`}>
             {nav.name}
           </div>
         </Link>
