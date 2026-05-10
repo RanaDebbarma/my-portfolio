@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { name: "home", href: "/" },
@@ -14,16 +14,17 @@ const navItems = [
 
 
 const NavBar = () => {
-  const [activeTab, setActiveTab] = useState(navItems[0].name)
+  const pathname = usePathname();
+
+  const activeTab = navItems.find(nav => nav.href === pathname)?.name || navItems[0].name;
 
   return (
-    <div className="w-fit border border-foreground/10 bg-background concave rounded-3xl flex gap-1 p-1">
+    <div className="w-fit border border-foreground/10 bg-background concave rounded-full flex gap-1 p-2">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
           key={nav.href}
           href={nav.href}
-          onClick={() => setActiveTab(nav.name)}
           className="relative rounded-3xl"
         >
           {/* pill */}
