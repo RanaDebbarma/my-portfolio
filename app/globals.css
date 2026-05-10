@@ -18,14 +18,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme:dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --secondary: hsl(216, 100%, 58%);
-    --concave: inset 0 -2px 4px rgba(255, 255, 255, 0.1);
-    --muted-text: #ededed90;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --secondary: hsl(216, 100%, 58%);
+  --concave: inset 0 -2px 4px rgba(255, 255, 255, 0.2);
+  --muted-text: #ededed90;
 }
 
 body {

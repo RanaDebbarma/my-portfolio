@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "motion/react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navItems = [
   { name: "home", href: "/" },
@@ -12,14 +12,13 @@ const navItems = [
   { name: "contact", href: "/contact" },
 ];
 
-
 const NavBar = () => {
   const pathname = usePathname();
 
   const activeTab = navItems.find(nav => nav.href === pathname)?.name || navItems[0].name;
 
   return (
-    <div className="w-fit border border-foreground/10 bg-background concave rounded-full flex gap-1 p-2">
+    <div className="w-fit border border-foreground/30 bg-background concave rounded-full flex gap-1 p-2">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
@@ -35,8 +34,8 @@ const NavBar = () => {
               style={{
                 borderRadius: 9999
               }}
-              // transition={{duration: 5}}
               animate={{ scale: [1, 0.9, 1] }}
+              transition={{ duration: 0.3 }}
             />
           }
 
