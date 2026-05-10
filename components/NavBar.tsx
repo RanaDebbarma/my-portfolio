@@ -18,7 +18,7 @@ const NavBar = () => {
   const activeTab = navItems.find(nav => nav.href === pathname)?.name || navItems[0].name;
 
   return (
-    <div className="w-fit border border-foreground/30 bg-background concave rounded-full flex gap-1 p-2">
+    <div className="w-fit border border-foreground/20 bg-background concave rounded-full flex gap-1 p-2">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
@@ -34,8 +34,8 @@ const NavBar = () => {
               style={{
                 borderRadius: 9999
               }}
-              animate={{ scale: [1, 0.9, 1] }}
-              transition={{ duration: 0.3 }}
+              animate={{ scale: [1, 0.7, 1] }}
+              transition={{ duration: 0.35 }}
             />
           }
 
