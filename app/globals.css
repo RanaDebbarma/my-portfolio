@@ -4,7 +4,13 @@
   --background: hsl(39, 43%, 79%);
   --foreground: #171717;
   --secondary: hsl(0, 0%, 100%, 0.65);
-  --concave: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+  --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.1);
+  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.7);
+
+  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.7);
+
   --muted-text: #ededed86;
 }
 
@@ -19,10 +25,16 @@
 }
 
 .dark {
-  --background: hsl(211, 50%, 7%);
-  --foreground: #ededed;
-  --secondary: hsl(216, 100%, 58%, 0.1);
-  --concave: inset 0 -2px 4px rgba(255, 255, 255, 0.2);
+  --background: hsl(210, 50%, 5%);
+  --foreground: hsl(0, 0%, 85%);
+  --secondary: hsl(211, 100%, 100%, 0.069);
+
+  --concave1: inset 0 4px 4px rgba(0, 0, 0, 1);
+  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.1);
+  
+  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 1);
+  --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.1);
+  
   --muted-text: #ededed90;
 }
 
@@ -33,5 +45,8 @@ body {
 }
 
 .concave {
-  box-shadow: var(--concave);
+  box-shadow: var(--concave1), var(--concave2);
+}
+.convex {
+  box-shadow: var(--convex1), var(--convex2);
 }

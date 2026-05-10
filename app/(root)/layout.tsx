@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {/* navigation */}
         <div className="border border-foreground/10 bg-secondary shadow-[0_4px_12px_rgba(0,0,0,0.2)] rounded-full z-10 px-4 py-3 flex gap-2 justify-between items-center">
           {/* LOGO */}
-          <div className="text-2xl font-serif font-bold flex gap-1">
+          <div className="text-2xl font-serif font-bold p-2 border border-foreground/5 concave rounded-full flex gap-1">
             <span className="text-red-500">R</span>
             <span className="text-blue-500">D</span>
           </div>
