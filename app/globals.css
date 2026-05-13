@@ -4,11 +4,17 @@
   --background: hsl(39, 43%, 79%);
   --foreground: #171717;
   --secondary: hsl(0, 0%, 100%, 0.65);
+<<<<<<< HEAD
 
   --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.1);
   --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.7);
   --concaveRidge1: 0 -4px 4px rgba(255, 255, 255, 0.69);
   --concaveRidge2: 0 4px 4px rgba(0, 0, 0, 0.1);
+=======
+  
+  --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.1);
+  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.7);
+>>>>>>> 1bdc3a935c77943bafcc58fa745bb5d1cfb4492a
 
   --convex1: inset 0 -4px 4px rgba(0, 0, 0, 0.1);
   --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.7);
@@ -27,6 +33,7 @@
 }
 
 .dark {
+<<<<<<< HEAD
   --background: hsl(211, 50%, 5%);
   --foreground: hsl(0, 0%, 100%, 0.81);
   --secondary: hsl(0, 100%, 100%, 0.1);
@@ -39,6 +46,18 @@
   --convex1: inset 0 -4px 4px rgba(0, 0, 0, 1);
   --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.1);
 
+=======
+  --background: hsl(211, 50%, 7%);
+  --foreground: hsl(0, 0%, 85%);
+  --secondary: hsl(211, 100%, 58%, 0.06);
+
+  --concave1: inset 0 4px 4px rgba(0, 0, 0, 1);
+  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.1);
+  
+  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 1);
+  --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.1);
+  
+>>>>>>> 1bdc3a935c77943bafcc58fa745bb5d1cfb4492a
   --muted-text: #ededed90;
 }
 
@@ -53,8 +72,11 @@ body {
 }
 .convex {
   box-shadow: var(--convex1), var(--convex2);
+<<<<<<< HEAD
 }
 .concaveRidge {
   box-shadow:
     var(--concave1), var(--concave2), var(--concaveRidge1), var(--concaveRidge2);
+=======
+>>>>>>> 1bdc3a935c77943bafcc58fa745bb5d1cfb4492a
 }

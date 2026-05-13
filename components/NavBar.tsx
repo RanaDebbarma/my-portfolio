@@ -18,7 +18,11 @@ const NavBar = () => {
   const activeTab = navItems.find(nav => nav.href === pathname)?.name || navItems[0].name;
 
   return (
+<<<<<<< HEAD
     <div className="w-fit border border-foreground/0 bg-background concaveRidge rounded-full flex gap-1 p-2">
+=======
+    <div className="w-fit border border-foreground/5 bg-background concave rounded-full flex gap-1 p-2">
+>>>>>>> 1bdc3a935c77943bafcc58fa745bb5d1cfb4492a
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
