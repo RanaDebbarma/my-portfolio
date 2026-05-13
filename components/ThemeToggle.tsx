@@ -4,7 +4,7 @@ import { ThemeContext } from "@/providers/ThemeProvider";
 import { useContext, useEffect } from "react";
 
 const ThemeToggle = () => {
-  const context = useContext<{ theme: string; toggleTheme: () => void } | null>(ThemeContext);
+  const context = useContext(ThemeContext) as { theme: string; toggleTheme: () => void } | null;
 
   if (!context) {
     throw new Error("ThemeToggle must be used inside ThemeProvider");
