@@ -18,7 +18,7 @@ const NavBar = () => {
   const activeTab = navItems.find(nav => nav.href === pathname)?.name || navItems[0].name;
 
   return (
-    <div className="w-fit border border-foreground/0 bg-background concaveRidge rounded-full flex gap-1 p-2">
+    <div className="isolate w-fit border border-foreground/0 bg-background concaveRidge rounded-full flex gap-1 p-2">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link
@@ -30,7 +30,7 @@ const NavBar = () => {
           {activeTab === nav.name &&
             <motion.div
               layoutId="active-pill"
-              className="absolute inset-0 bg-foreground"
+              className="absolute inset-0 bg-foreground convex"
               style={{
                 borderRadius: 9999
               }}
@@ -41,8 +41,8 @@ const NavBar = () => {
 
           {/* text */}
           <div className={`${activeTab === nav.name
-            ? '' : 'hover:text-muted'
-            } relative z-10 px-3 py-1 text-white mix-blend-difference`}>
+            ? '' : 'hover:text-emerald-500'
+            } relative z-10 px-3 py-1 rounded-full capitalize text-white mix-blend-difference transition-all duration-100 ease-in`}>
             {nav.name}
           </div>
         </Link>

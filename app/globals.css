@@ -5,12 +5,12 @@
   --foreground: #171717;
   --secondary: hsl(0, 0%, 100%, 0.65);
 
-  --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.1);
+  --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.17);
   --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.7);
-  --concaveRidge1: 0 -4px 4px rgba(255, 255, 255, 0.69);
-  --concaveRidge2: 0 4px 4px rgba(0, 0, 0, 0.1);
+  --concaveRidge1: 0 -4px 4px rgba(255, 255, 255, 0.7);
+  --concaveRidge2: 0 4px 4px rgba(0, 0, 0, 0.17);
 
-  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 0.17);
   --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.7);
 
   --muted-text: #ededed86;
@@ -31,13 +31,13 @@
   --foreground: hsl(0, 0%, 100%, 0.81);
   --secondary: hsl(0, 100%, 100%, 0.1);
 
-  --concave1: inset 0 4px 4px rgba(0, 0, 0, 1);
-  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.1);
-  --concaveRidge1: 0 -4px 4px rgba(255, 255, 255, 0.1);
-  --concaveRidge2: 0 4px 4px rgba(0, 0, 0, 1);
+  --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.7);
+  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.17);
+  --concaveRidge1: 0 -4px 4px rgba(255, 255, 255, 0.17);
+  --concaveRidge2: 0 4px 4px rgba(0, 0, 0, 0.7);
 
-  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 1);
-  --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.1);
+  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 0.7);
+  --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.17);
 
   --muted-text: #ededed90;
 }
@@ -52,9 +52,13 @@ body {
   box-shadow: var(--concave1), var(--concave2);
 }
 .convex {
-  box-shadow: var(--convex1), var(--convex2);
+  box-shadow: var(--convex1), var(--convex2), var(--concaveRidge2) ;
 }
 .concaveRidge {
   box-shadow:
     var(--concave1), var(--concave2), var(--concaveRidge1), var(--concaveRidge2);
+}
+
+.headline-font {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }

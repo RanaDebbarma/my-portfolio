@@ -1,5 +1,7 @@
 export const ProfileData = {
-  summary: "I am a software engineer and designer based in India. I have experience working with various technologies and have a strong foundation in programming concepts. I am also proficient in design principles and have experience in designing user interfaces and web applications. I am also a skilled problem solver and have experience working on complex projects.",
+  moto: "Designing responsive experiences that feel modern, tactile, and clear.",
+
+  summary: "Self-taught frontend developer focused on building responsive and interactive web applications using React, TypeScript, JavaScript, and Tailwind CSS. Hands-on experience with component-based UI development, state management, local storage, and modern Git/GitHub workflows. Currently learning Next.js and growing toward full-stack and software engineering roles.",
 
   personalInfo: {
     name: "Rana Debbarma",
@@ -20,7 +22,7 @@ export const ProfileData = {
     frontend: ["React", "Next.js", "Tailwind CSS"],
     backend: ["Node.js", "Express.js"],
     database: ["MongoDB", "PostgreSQL"],
-    programmingLanguage: ["JavaScript", "TypeScript"],
+    language: ["JavaScript", "TypeScript"],
     tools: ["Git", "VS Code"],
   },
 
