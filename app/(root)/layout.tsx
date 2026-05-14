@@ -1,3 +1,4 @@
+import Logo from "@/components/Logo";
 import NavBar from "@/components/NavBar"
 import ThemeToggle from "@/components/ThemeToggle"
 import ThemeProvider from "@/providers/ThemeProvider";
@@ -7,12 +8,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className="h-screen w-screen overflow-hidden">
       <div className="mx-auto pt-4 pb-4 max-w-7xl w-[95%] h-screen flex flex-col gap-4">
         {/* navigation */}
-        <div className="border border-foreground/10 bg-secondary shadow-[0_4px_12px_rgba(0,0,0,0.2)] rounded-full z-10 px-4 py-3 flex gap-2 justify-between items-center overflow-hidden">
+        <div className="border border-foreground/10 bg-secondary shadow-[0_4px_12px_rgba(0,0,0,0.2)] rounded-full z-10 px-4 py-3 flex gap-2 justify-between items-center overflow-auto">
           {/* LOGO */}
-          <div className="text-2xl font-serif font-bold p-2 border border-foreground/5 concaveRidge rounded-full flex gap-1">
-            <span className="text-red-500">R</span>
-            <span className="text-red-500">D</span>
-          </div>
+          <Logo />
           <div className="flex gap-2 items-center">
             {/* NavTabs */}
             <NavBar />
