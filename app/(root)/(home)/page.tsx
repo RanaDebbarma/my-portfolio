@@ -4,40 +4,40 @@ import { ProfileData } from "@/lib/data"
 
 const home = () => {
   return (
-    <div className="h-full flex gap-8">
+    <div className="h-full flex flex-col lg:flex-row  gap-8">
       {/* Hero */}
-      <div className="text- pt-12 flex flex-col gap-12 h-full justify-center">
-        <div className="space-y-8">
-          <p className="text-4xl font-bold headline-font">
-            {ProfileData.moto}
-          </p>
-          <p className="text-md text-foreground/80">
-            {ProfileData.summary}
-          </p>
-        </div>
-        {/* buttons */}
-        <div className="flex gap-4 justify-start">
-          <Button><p className="text-background text-sm font-semibold">Explore projects</p></Button>
-          <Button><p className="text-background text-sm font-semibold">Contact me</p></Button>
+      <div className="flex flex-col gap-8 h-full justify-around">
+        {/* Availability */}
+        <div className="convex w-fit px-4 py-2 rounded-full text-sm">Available to work</div>
+        {/* Intro */}
+        <div className="flex flex-col gap-8">
+          <div className="space-y-8">
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-bold headline-font">
+              {ProfileData.moto}
+            </p>
+            <p className="text-md text-foreground/80">
+              {ProfileData.summary}
+            </p>
+          </div>
+          {/* buttons */}
+          <div className="flex gap-4 justify-start">
+            <Button href="/projects"><p className="text-background text-sm font-semibold">Explore projects</p></Button>
+            <Button href="/contact"><p className="text-background text-sm font-semibold">Contact me</p></Button>
+          </div>
         </div>
         {/* stacks */}
-        <div>
-          {Object.entries(ProfileData.skills).map(skill => (
-            <div key={skill[0]}>
-              {skill[0]} : {skill[1].map((item, index) => {
-                if (index === skill[1].length - 1) {
-                  return item + "."
-                } else {
-                  return (item + ", ")
-                }
-              })}
-            </div>
-          ))}
+        <div className="space-y-4 space-x-2">
+          <div className="convex w-fit px-4 py-2 rounded-full text-sm">
+            Tech stacks goes here
+          </div>
+          <span className="convex w-fit px-4 py-2 rounded-full text-sm">tech1</span>
+          <span className="convex w-fit px-4 py-2 rounded-full text-sm">tech2</span>
+          <span className="convex w-fit px-4 py-2 rounded-full text-sm">tech3</span>
         </div>
       </div>
-      
+
       {/* Overview */}
-      <div className="border border-foreground/50 w-50 rounded-3xl shrink-0 p-4">
+      <div className="lg:w-120 border border-foreground/50 w-full rounded-3xl shrink-0 p-4">
         <Overview></Overview>
       </div>
     </div>

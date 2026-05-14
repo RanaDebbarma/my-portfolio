@@ -22,15 +22,9 @@ const ThemeToggle = () => {
   return (
     <div
       onClick={() => toggleTheme()}
-      className={`${theme === 'dark'
-        ? "hover:bg-emerald-500/10"
-        : "hover:bg-red-500/10"
-        } group convex isolate cursor-pointer px-3 py-2 relative rounded-full overflow-hidden duration-300 ease-in-out`}
+      className="hover:bg-accent/10 group convex active:scale-95 isolate cursor-pointer px-3 py-2 relative rounded-full overflow-hidden duration-300 ease-in-out"
     >
-      <div className={`${theme === 'dark'
-        ? "group-hover:text-emerald-500"
-        : "group-hover:text-red-600"
-        } duration-300 ease-in-out`}
+      <div className="group-hover:text-accent duration-300 ease-in-out"
       >
         {theme}
       </div>
