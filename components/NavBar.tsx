@@ -18,7 +18,7 @@ const NavBar = () => {
   const activeTab = navItems.find(nav => nav.href === pathname)?.name || navItems[0].name;
 
   return (
-    <div className="isolate w-fit border-3 border-secondary bg-background concaveRidge rounded-full flex gap-1 p-2">
+    <div className="isolate w-fit border-3 border-secondary bg-background concaveRidge rounded-4xl flex justify-center items-center flex-wrap gap-1 p-2">
       {/* NavTabs */}
       {navItems.map(nav => (
         <Link

@@ -9,7 +9,7 @@ const home = () => {
       {/* section1 */}
       <div className="grow">
         {/* top bar */}
-        <div className="flex justify-between mb-4">
+        <div className="flex gap-4 mb-4">
           <div className="border border-foreground/30 bg-foreground/5 rounded-full px-2 py-1 text-sm font-medium font-sans">
             Open for frontend roles
           </div>
