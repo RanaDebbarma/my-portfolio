@@ -3,7 +3,11 @@
 :root {
   --background: hsl(39, 43%, 79%);
   --foreground: #171717;
+<<<<<<< HEAD
   --secondary: hsl(0, 0%, 100%, 0.3);
+=======
+  --secondary: hsl(0, 0%, 100%, 0.4);
+>>>>>>> e952b36cfabb9746de4b09c099218dc28aa0cbc3
   --accent: oklch(57.7% 0.245 27.325);
 
   --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.17);
