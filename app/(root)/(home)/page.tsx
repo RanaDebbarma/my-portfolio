@@ -1,44 +1,50 @@
 import Button from "@/components/Button"
 import Overview from "@/components/Overview"
+import Stack from "@/components/Stack"
 import { ProfileData } from "@/lib/data"
 
 const home = () => {
   return (
     <div className="h-full flex flex-col lg:flex-row  gap-8">
-      {/* Hero */}
-      <div className="flex flex-col gap-8 h-full justify-around">
-        {/* Availability */}
-        <div className="convex w-fit px-4 py-2 rounded-full text-sm">Available to work</div>
-        {/* Intro */}
-        <div className="flex flex-col gap-8">
-          <div className="space-y-8">
-            <p className="text-3xl sm:text-4xl lg:text-5xl font-bold headline-font">
-              {ProfileData.moto}
-            </p>
-            <p className="text-md text-foreground/80">
-              {ProfileData.summary}
-            </p>
+      <div className="grow">
+        {/* top bar */}
+        <div className="flex justify-between">
+          <div className="border border-foreground/30 bg-foreground/5 rounded-full px-2 py-1 text-sm font-medium font-sans">
+            Open for frontend roles
           </div>
-          {/* buttons */}
-          <div className="flex gap-4 justify-start">
-            <Button href="/projects"><p className="text-background text-sm font-semibold">Explore projects</p></Button>
-            <Button href="/contact"><p className="text-background text-sm font-semibold">Contact me</p></Button>
+          {/* Availability */}
+          <div className="uppercase border border-emerald-500/50 bg-emerald-500/6 text-emerald-500/80 tracking-widest w-fit px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+            available
+            <div className="relative inline-block bg-emerald-500/50 rounded-full h-3 w-3">
+              <div className="absolute inline-block animate-ping bg-emerald-500/50 rounded-full h-3 w-3"></div>
+            </div>
           </div>
         </div>
-        {/* stacks */}
-        <div className="space-y-4 space-x-2">
-          <div className="convex w-fit px-4 py-2 rounded-full text-sm">
-            Tech stacks goes here
+        {/* Hero */}
+        <div className="flex flex-col gap-8 h-full max-w-screen justify-around">
+          {/* Intro */}
+          <div className="flex flex-col gap-8">
+            <div className="space-y-8">
+              <p className="text-3xl sm:text-4xl lg:text-5xl font-bold headline-font">
+                {ProfileData.moto}
+              </p>
+              <p className="text-md text-foreground/80">
+                {ProfileData.summary}
+              </p>
+            </div>
+            {/* buttons */}
+            <div className="flex gap-4 justify-start">
+              <Button href="/projects"><p className="text-background text-md font-semibold">Explore projects</p></Button>
+              <Button href="/contact"><p className="text-background text-md font-semibold">Contact me</p></Button>
+            </div>
           </div>
-          <span className="convex w-fit px-4 py-2 rounded-full text-sm">tech1</span>
-          <span className="convex w-fit px-4 py-2 rounded-full text-sm">tech2</span>
-          <span className="convex w-fit px-4 py-2 rounded-full text-sm">tech3</span>
+          {/* stacks */}
+          <Stack />
         </div>
       </div>
-
       {/* Overview */}
-      <div className="lg:w-120 border border-foreground/50 w-full rounded-3xl shrink-0 p-4">
-        <Overview></Overview>
+      <div className="lg:w-120 border border-foreground/30 bg-foreground/5 w-full rounded-3xl shrink-0 p-4">
+        <Overview />
       </div>
     </div>
   )

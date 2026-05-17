@@ -22,7 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
         {/* content */}
         <div
-          className="overflow-y-auto border border-foreground/10 bg-secondary shadow-[0_16px_24px_rgba(0,0,0,0.2)] rounded-4xl flex-1 p-4"
+          className="overflow-y-auto border border-foreground/10 bg-secondary shadow-[0_16px_24px_rgba(0,0,0,0.2)] rounded-4xl flex-1 p-4 md:p-8 lg:p-12"
         >
           {children}
         </div>
