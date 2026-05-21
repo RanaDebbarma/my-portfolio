@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const navItems = [
   { name: "home", href: "/" },
-  { name: "overview", href: "/overview" },
+  { name: "skills", href: "/skills" },
   { name: "about", href: "/about" },
   { name: "projects", href: "/projects" },
   { name: "contact", href: "/contact" },
@@ -41,7 +41,7 @@ const NavBar = () => {
 
           {/* text */}
           <div className={`${activeTab === nav.name
-            ? '' : 'hover:text-emerald-500'
+            ? '' : 'hover:text-teal-600'
             } relative z-10 px-3 py-1 rounded-full capitalize text-white mix-blend-difference transition-all duration-100 ease-in`}>
             {nav.name}
           </div>
