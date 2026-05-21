@@ -7,9 +7,9 @@ const home = () => {
   return (
     <div className="h-full flex flex-col lg:flex-row gap-8">
       {/* section1 */}
-      <div className="grow">
+      <div className="grow flex flex-col gap-8">
         {/* top bar */}
-        <div className="flex gap-4 mb-4">
+        <div className="flex gap-4">
           <div className="border border-foreground/30 bg-foreground/5 rounded-full px-2 py-1 text-sm font-medium font-sans">
             Open for frontend roles
           </div>
@@ -22,7 +22,7 @@ const home = () => {
           </div>
         </div>
         {/* Hero */}
-        <div className="flex flex-col gap-8 h-full max-w-screen justify-around">
+        <div className="flex flex-col gap-16 h-full max-w-screen justify-betwee items-around">
           {/* Intro */}
           <div className="flex flex-col gap-8">
             <div className="space-y-8">
@@ -40,16 +40,14 @@ const home = () => {
             </div>
           </div>
           {/* stacks */}
-          <div className="mb-8">
+          <div className="mb-2">
             <Stack />
           </div>
         </div>
       </div>
       {/* section2 */}
       {/* Overview */}
-      <div className="lg:w-120 border border-foreground/30 bg-foreground/5 w-full rounded-3xl shrink-0 p-4">
-        <Overview />
-      </div>
+      <Overview />
     </div>
   )
 }
