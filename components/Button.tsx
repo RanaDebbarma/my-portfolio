@@ -7,9 +7,9 @@ const Button = ({ children, href }: { children: React.ReactNode, href?: string }
   if (href === undefined) {
     return (
       <button
-        className="active:scale-95 isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer"
+        className="active:scale-95 hover:scale-105 isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer"
         style={{
-          transitionDuration: "200ms",
+          transitionDuration: "300ms",
           transitionTimingFunction: "ease-in-out"
         }}
       >
@@ -21,14 +21,14 @@ const Button = ({ children, href }: { children: React.ReactNode, href?: string }
   else
     return (
       <Link href={href}
-        className="active:scale-95 isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer"
+        className="active:scale-95 hover:scale-105 isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer"
         style={{
-          transitionDuration: "200ms",
+          transitionDuration: "300ms",
           transitionTimingFunction: "ease-in-out"
         }}
       >
         {children}
-        <div className="absolute -z-10 top-0 left-0 w-full h-full group-hover:bg-accent/50 transition-colors duration-300 ease-in-out"></div>
+        <div className="absolute -z-10 top-0 left-0 w-full h-full group-hover:bg-accent/60 transition-colors duration-300 ease-in-out"></div>
       </Link>
     )
 }

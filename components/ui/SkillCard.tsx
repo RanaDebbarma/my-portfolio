@@ -1,8 +1,9 @@
-const SkillCard = ({ children }: { children: React.ReactNode }) => {
+const SkillCard = ({ children, icon }: { children: React.ReactNode, icon: React.ReactNode }) => {
   return (
     <div
-      className={`border border-foreground/30 px-4 py-3 rounded-full bg-foreground/5`}
+      className={`h-14 flex items-center justify-center gap-2 border border-foreground/30 px-4 py-3 rounded-full bg-foreground/5`}
     >
+      {icon}
       {children}
     </div>
   )
