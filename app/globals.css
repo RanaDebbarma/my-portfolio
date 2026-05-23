@@ -36,12 +36,12 @@
   --accent: oklch(69.6% 0.17 162.48);
 
   --concave1: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
-  --concave2: inset -4px -4px 4px rgba(255, 255, 255, 0.17);
-  --concaveRidge1: -4px -4px 4px rgba(255, 255, 255, 0.17);
+  --concave2: inset -4px -4px 4px rgba(255, 255, 255, 0.1);
+  --concaveRidge1: -4px -4px 4px rgba(255, 255, 255, 0.1);
   --concaveRidge2: 4px 4px 4px rgba(0, 0, 0, 0.4);
 
   --convex1: inset -4px -4px 4px rgba(0, 0, 0, 0.4);
-  --convex2: inset 4px 4px 4px rgba(255, 255, 255, 0.17);
+  --convex2: inset 4px 4px 4px rgba(255, 255, 255, 0.1);
 
   --muted-text: #ededed90;
 }
