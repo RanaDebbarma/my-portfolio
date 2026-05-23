@@ -6,15 +6,15 @@
   --secondary: hsl(0, 0%, 100%, 0.3);
   --accent: hsl(19, 80%, 30%);
 
-  --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.17);
-  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.5);
-  --concaveRidge1: 0 -4px 4px rgba(255, 255, 255, 0.5);
-  --concaveRidge2: 0 4px 4px rgba(0, 0, 0, 0.2);
+  --concave1: inset 4px 4px 4px rgba(0, 0, 0, 0.17);
+  --concave2: inset -4px -4px 4px rgba(255, 255, 255, 0.4);
+  --concaveRidge1: -4px -4px 4px rgba(255, 255, 255, 0.4);
+  --concaveRidge2: 4px 4px 4px rgba(0, 0, 0, 0.2);
 
-  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 0.17);
-  --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.5);
+  --convex1: inset -4px -4px 4px rgba(0, 0, 0, 0.17);
+  --convex2: inset 4px 4px 4px rgba(255, 255, 255, 0.4);
 
-  --muted-text: #ededed86;
+  --muted-text: hsl(0, 0%, 9%, 0.4);
 }
 
 @theme inline {
@@ -35,13 +35,13 @@
   /* --secondary: hsl(40, 50%, 10%, 1); */
   --accent: oklch(69.6% 0.17 162.48);
 
-  --concave1: inset 0 4px 4px rgba(0, 0, 0, 0.7);
-  --concave2: inset 0 -4px 4px rgba(255, 255, 255, 0.17);
-  --concaveRidge1: 0 -4px 4px rgba(255, 255, 255, 0.17);
-  --concaveRidge2: 0 4px 4px rgba(0, 0, 0, 0.7);
+  --concave1: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
+  --concave2: inset -4px -4px 4px rgba(255, 255, 255, 0.17);
+  --concaveRidge1: -4px -4px 4px rgba(255, 255, 255, 0.17);
+  --concaveRidge2: 4px 4px 4px rgba(0, 0, 0, 0.4);
 
-  --convex1: inset 0 -4px 4px rgba(0, 0, 0, 0.7);
-  --convex2: inset 0 4px 4px rgba(255, 255, 255, 0.17);
+  --convex1: inset -4px -4px 4px rgba(0, 0, 0, 0.4);
+  --convex2: inset 4px 4px 4px rgba(255, 255, 255, 0.17);
 
   --muted-text: #ededed90;
 }
