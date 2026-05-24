@@ -24,7 +24,7 @@ const home = () => {
             </div>
           </div>
           {/* Hero */}
-          <div className="flex flex-col gap-12 h-full max-w-screen justify-around items-around">
+          <div className="flex flex-col gap-12 h-full max-w-screen justify-center items-around">
             {/* Intro */}
             <div className="flex flex-col gap-8">
               <div className="space-y-8">
