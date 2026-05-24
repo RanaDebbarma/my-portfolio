@@ -10,15 +10,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {/* navigation */}
         <div className="shrink-0 border border-foreground/10 bg-secondary shadow-[0_4px_12px_rgba(0,0,0,0.2)] rounded-4xl z-10 w-full px-2 sm:px-4 py-3 flex gap-2 justify-between items-center overflow-auto scrollbar-none">
           {/* LOGO */}
-          <Logo />
-          <div className="flex gap-2 items-center">
-            {/* NavTabs */}
-            <NavBar />
-            {/* ThemeToggle */}
-            <ThemeProvider>
-              <ThemeToggle />
-            </ThemeProvider>
+          <div className="grow">
+            <Logo />
           </div>
+          {/* NavTabs */}
+          <NavBar />
+          {/* ThemeToggle */}
+          <ThemeProvider>
+            <ThemeToggle />
+          </ThemeProvider>
         </div>
         {/* content */}
         <div
