@@ -42,7 +42,7 @@ const NavBar = () => {
           {/* text */}
           <div className={`${activeTab === nav.name
             ? '' : 'hover:text-teal-600'
-            } relative z-10 px-3 py-1 rounded-full capitalize text-white mix-blend-difference transition-all duration-100 ease-in`}>
+            } relative z-10 px-3 py-1 font-medium rounded-full capitalize text-white mix-blend-difference transition-all duration-100 ease-in`}>
             {nav.name}
           </div>
         </Link>

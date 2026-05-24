@@ -6,7 +6,7 @@ import { ProfileData } from "@/lib/data"
 
 const home = () => {
   return (
-    <Wrapper className=" p-4 md:p-8 lg:p-12">
+    <Wrapper className="bg-secondary p-4 md:p-8 lg:p-12">
       <div className="h-full flex flex-col lg:flex-row gap-8">
         {/* section1 */}
         <div className="grow flex flex-col gap-8">

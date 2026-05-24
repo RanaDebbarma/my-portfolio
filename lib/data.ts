@@ -11,10 +11,11 @@ export const ProfileData = {
   },
 
   education: {
-    degree: "Bachelor of Science in Computer Science",
-    college: "Indian Institute of Technology, Bhubaneswar",
+    degree: "B.Tech in Electrical Engineering",
+    college: "National Institute of Technology",
+    location: "Agartala, India",
     yearOfPassing: 2023,
-    gpa: 8.5
+    gpa: 7.2
 
   },
 

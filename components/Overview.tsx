@@ -11,7 +11,7 @@ const Overview = () => {
         <p className="text-muted">Frontend Developer based in Guwahati</p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
         <div className="space-y-2 p-8 border-0 border-foreground/30 concave rounded-2xl">
           <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">Primary stack</p>
           <p>React + tailwind</p>
