@@ -1,6 +1,7 @@
 import Logo from "@/components/Logo";
 import NavBar from "@/components/NavBar"
 import ThemeToggle from "@/components/ThemeToggle"
+import { ProfileData } from "@/lib/data";
 import ThemeProvider from "@/providers/ThemeProvider";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -27,7 +28,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           {children}
         </div>
         <footer className="flex justify-center items-center rounded-4xl border-t border-foreground/30 p-8 text-muted footerBg">
-          <p>&copy; 2026 Rana Debbarma. All rights reserved.</p>
+          <p>&copy; 2026 {ProfileData.personalInfo.name}. All rights reserved.</p>
         </footer>
       </div>
     </div>

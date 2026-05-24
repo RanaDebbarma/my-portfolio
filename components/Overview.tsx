@@ -7,27 +7,22 @@ const Overview = () => {
       <h1 className="uppercase tracking-widest">Quick Overview</h1>
 
       <div>
-        <p>Rana Debbarma</p>
-        <p className="text-muted">Frontend Developer based in Guwahati</p>
+        <p>{ProfileData.personalInfo.name}</p>
+        <p className="text-muted">{ProfileData.overview["current position"]} based in {ProfileData.personalInfo.address}</p>
       </div>
 
+
       <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
-        <div className="space-y-2 p-8 border-0 border-foreground/30 concave bg-background rounded-2xl">
-          <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">Primary stack</p>
-          <p>React + tailwind</p>
-        </div>
-        <div className="space-y-2 p-8 border-0 border-foreground/30 concave bg-background rounded-2xl">
-          <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">Learning now</p>
-          <p>NextJs</p>
-        </div>
-        <div className="space-y-2 p-8 border-0 border-foreground/30 concave bg-background rounded-2xl">
-          <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">Career direction</p>
-          <p>Full-stack</p>
-        </div>
-        <div className="space-y-2 p-8 border-0 border-foreground/30 concave bg-background rounded-2xl">
-          <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">Based in</p>
-          <p>{ProfileData.personalInfo.address}</p>
-        </div>
+        {Object.entries(ProfileData.overview.cards).map((item, index) => (
+
+          <div
+            key={index}
+            className="space-y-2 p-8 border-0 border-foreground/30 concave bg-background rounded-2xl"
+          >
+            <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">{item[0]}</p>
+            <p>{item[1]}</p>
+          </div>
+        ))}
       </div>
 
       {/* Projects */}
