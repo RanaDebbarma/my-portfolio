@@ -22,10 +22,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
         {/* content */}
         <div
-          className="flex-1 pb-8"
+          className="flex-1 pb-4"
         >
           {children}
         </div>
+        <footer className="flex justify-center items-center border-t p-8 text-muted">
+          <p>&copy; 2026 Rana Debbarma. All rights reserved.</p>
+        </footer>
       </div>
     </div>
   )

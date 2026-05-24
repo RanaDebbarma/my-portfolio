@@ -5,12 +5,13 @@
   --foreground: #171717;
   --secondary: hsl(0, 0%, 100%, 0.4);
   --accent: hsl(19, 80%, 30%);
+  --highlightedCard: hsl(0, 0%, 0%, 0.9);
+  --invert-font: hsl(0, 0%, 100%, 0.8);
 
   --concave1: inset 4px 4px 4px rgba(0, 0, 0, 0.17);
   --concave2: inset -4px -4px 4px rgba(255, 255, 255, 0.4);
   --concaveRidge1: -4px -4px 4px rgba(255, 255, 255, 0.4);
   --concaveRidge2: 4px 4px 4px rgba(0, 0, 0, 0.2);
-
   --convex1: inset -4px -4px 4px rgba(0, 0, 0, 0.17);
   --convex2: inset 4px 4px 4px rgba(255, 255, 255, 0.4);
 
@@ -23,7 +24,10 @@
   --color-secondary: var(--secondary);
   --color-muted: var(--muted-text);
   --color-accent: var(--accent);
-  
+
+  --color-highlightedCard: var(--highlightedCard);
+  --color-invertFont: var(--invert-font);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -32,14 +36,14 @@
   --background: hsl(210, 60%, 6%);
   --foreground: hsl(0, 0%, 100%, 0.81);
   --secondary: hsl(0, 100%, 100%, 0.03);
-  /* --secondary: hsl(40, 50%, 10%, 1); */
   --accent: oklch(69.6% 0.17 162.48);
+  --highlightedCard: hsl(0, 0%, 100%, 0.7);
+  --invert-font: hsl(0, 0%, 0%);
 
   --concave1: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
   --concave2: inset -4px -4px 4px rgba(255, 255, 255, 0.1);
   --concaveRidge1: -4px -4px 4px rgba(255, 255, 255, 0.1);
   --concaveRidge2: 4px 4px 4px rgba(0, 0, 0, 0.4);
-
   --convex1: inset -4px -4px 4px rgba(0, 0, 0, 0.4);
   --convex2: inset 4px 4px 4px rgba(255, 255, 255, 0.1);
 
