@@ -4,11 +4,11 @@ import Image from "next/image"
 const Overview = () => {
   return (
     <div className="shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-8 lg:w-120 border border-foreground/16 bg-foreground/5 w-full rounded-3xl shrink-0 p-4 sm:p-8">
-      <h1 className="uppercase tracking-widest">Quick Overview</h1>
+      <h2 className="uppercase tracking-widest">Quick Overview</h2>
 
       <div>
         <p>{ProfileData.personalInfo.name}</p>
-        <p className="text-muted">{ProfileData.overview["current position"]} based in {ProfileData.personalInfo.address}</p>
+        <p className="text-muted">{ProfileData.position} based in {ProfileData.personalInfo.address}</p>
       </div>
 
 
@@ -26,6 +26,7 @@ const Overview = () => {
       </div>
 
       {/* Projects */}
+      <h4 className="uppercase tracking-widest font-sans">Project</h4>
       <div className="flex-1 flex flex-col justify-center items-center">
         <div className="rounded-2xl">
           <h4 className="border-t border-foreground/30 py-2 w-full text-center font-sans tracking-wide text-muted rounded-2xl">Kanban board</h4>

@@ -27,7 +27,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         >
           {children}
         </div>
-        <footer className="flex justify-center items-center rounded-4xl border-t border-foreground/30 p-8 text-muted footerBg">
+        <footer className="flex justify-center items-center rounded-4xl border-t border-foreground/10 p-8 text-muted footerBg">
           <p>&copy; 2026 {ProfileData.personalInfo.name}. All rights reserved.</p>
         </footer>
       </div>

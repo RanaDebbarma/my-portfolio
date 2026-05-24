@@ -1,7 +1,10 @@
 export const ProfileData = {
+  position: "Frontend Developer",
+
   moto: "Designing responsive experiences that feel modern, tactile, and clear.",
 
-  summary: "Self-taught frontend developer focused on building responsive and interactive web applications using React, TypeScript, JavaScript, and Tailwind CSS. Hands-on experience with component-based UI development, state management, local storage, and modern Git/GitHub workflows. Currently learning Next.js and growing toward full-stack and software engineering roles.",
+  summary:
+    "Self-taught frontend developer focused on building responsive and interactive web applications using React, TypeScript, JavaScript, and Tailwind CSS. Hands-on experience with component-based UI development, state management, local storage, and modern Git/GitHub workflows. Currently learning Next.js and growing toward full-stack and software engineering roles.",
 
   personalInfo: {
     name: "Rana Debbarma",
@@ -11,7 +14,6 @@ export const ProfileData = {
   },
 
   overview: {
-    "current position": "Frontend Developer",
     cards: {
       "primary stack": "React + Tailwind CSS",
       "learning now": "Next.js",
@@ -22,18 +24,22 @@ export const ProfileData = {
 
   about: {
     heading: "A self-taught builder with a practical frontend mindset.",
-    summary: "The portfolio is shaped around My resume details, but presented as a richer story: strong responsive layout instincts, hands-on UI work, and a clear path toward full-stack engineering.",
+    summary:
+      "The portfolio is shaped around My resume details, but presented as a richer story: strong responsive layout instincts, hands-on UI work, and a clear path toward full-stack engineering.",
 
     workingStyle: {
       title: "Working Style",
-      heading: "I approach frontend work with a clean UI mindset: responsive layout first, clear hierarchy second, and interaction only where it improves the experience.",
-      summary: "The focus is on building interfaces that feel polished, readable, and usable across devices.",
+      heading:
+        "I approach frontend work with a clean UI mindset: responsive layout first, clear hierarchy second, and interaction only where it improves the experience.",
+      summary:
+        "The focus is on building interfaces that feel polished, readable, and usable across devices.",
     },
 
     currentGoal: {
       title: "current goal",
       heading: "Frontend first, full-stack next.",
-      summary: "Currently focused on frontend development, with a clear path toward backend skills, fullstack projects, and broader software engineering practice.",
+      summary:
+        "Currently focused on frontend development, with a clear path toward backend skills, fullstack projects, and broader software engineering practice.",
     },
   },
 
