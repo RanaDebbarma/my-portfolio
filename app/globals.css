@@ -71,3 +71,7 @@ body {
   font-family:
     "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+
+.footerBg {
+  background-image: linear-gradient(var(--color-secondary), transparent 60%);
+}
