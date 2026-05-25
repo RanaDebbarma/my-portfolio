@@ -33,7 +33,7 @@ const about = () => {
           {educationCard.map((item, index) => (
             <div
               key={index}
-              className="flex-1 bg-background rounded-2xl p-4 space-y-2"
+              className={`flex-${1} border border-foreground/10 bg-background rounded-2xl p-4 space-y-2`}
             >
               <h4 className="tracking-widest uppercase text-sm text-muted">{item.title}</h4>
               <p>{item.content}</p>

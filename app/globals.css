@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 45deg;
+  inherits: false;
+}
+
 :root {
-  --background: hsl(40, 0%, 85%); 
+  --background: hsl(40, 0%, 85%);
   --foreground: #171717;
   --secondary: hsl(0, 0%, 100%, 0.4);
   /* --accent: hsl(19, 80%, 30%); */
@@ -31,12 +37,14 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --animate-gradient-rotate: gradient-rotate 50s linear infinite;
 }
 
 .dark {
   --background: hsl(210, 60%, 7%);
   --foreground: hsl(0, 0%, 100%, 0.81);
-  --secondary: hsl(0, 100%, 100%, 0.03);
+  --secondary: hsl(0, 100%, 100%, 0.035);
   --accent: oklch(69.6% 0.17 162.48);
   --highlightedCard: hsl(0, 0%, 100%, 0.7);
   --invert-font: hsl(0, 0%, 0%);
@@ -75,4 +83,17 @@ body {
 
 .footerBg {
   background-image: linear-gradient(var(--color-secondary), transparent 50%);
+}
+
+.radialMask {
+  mask-image: radial-gradient(circle, transparent 20%, black);
+}
+
+@keyframes gradient-rotate {
+  0% {
+    --gradient-angle: 90deg;
+  }
+  100% {
+    --gradient-angle: 450deg;
+  }
 }
