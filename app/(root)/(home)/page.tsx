@@ -11,7 +11,7 @@ const home = () => {
         {/* section1 */}
         <div className="grow flex flex-col gap-8">
           {/* top bar */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap">
             <div className="border border-foreground/30 bg-secondary text-foreground/80 rounded-full px-2 py-1 text-sm font-medium font-sans">
               Open for frontend roles
             </div>

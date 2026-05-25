@@ -3,14 +3,16 @@ import Image from "next/image"
 
 const Overview = () => {
   return (
-    <div className="relative shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-6 lg:w-120 border border-foreground/16 bg-secondary w-full rounded-3xl shrink-0 p-4 sm:p-8">
+    <div className="relative shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-6 lg:w-120 border border-foreground/16 bg-secondary w-full rounded-3xl shrink-0 p-6 sm:p-8">
       <h2 className="uppercase tracking-widest">Quick Overview</h2>
-      <div className="absolute right-4 sm:right-8">
-        <p className="bg-background rounded-xl p-3 text-foreground/90 font-sans font-semibold tracking-widest">RD</p>
+      <div className="absolute right-6 sm:right-8">
+        <p className="bg-background border border-foreground/10 rounded-xl p-3 text-foreground/90 font-sans font-semibold tracking-widest">
+          RD
+        </p>
       </div>
 
       <div className="space-y-2">
-        <p className="text-xl">{ProfileData.personalInfo.name}</p>
+        <p className="text-xl font-medium">{ProfileData.personalInfo.name}</p>
         <p className="text-sm text-muted">{ProfileData.position} based in {ProfileData.personalInfo.address}</p>
       </div>
 
@@ -19,13 +21,17 @@ const Overview = () => {
         {ProfileData.overview.cards.map((item, index) => (
           <div
             key={index}
-            className="space-y-2 p-4 border-0 border-foreground/30 concave bg-background rounded-2xl"
+            className="flex flex-row-reverse sm:flex-col gap-3 justify-between p-6 sm:p-4 concave bg-background rounded-2xl"
           >
-            <div className="h-9 fill-foreground/80 p-2 inline-block bg-secondary rounded-xl">
-              {item.svg}
+            <div className="flex items-center">
+              <div className="min-h-8 h-10 fill-foreground/80 p-2.5 inline-block bg-secondary  border border-foreground/10 rounded-xl">
+                {item.svg}
+              </div>
             </div>
-            <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">{item.title}</p>
-            <p>{item.content}</p>
+            <div className="grow space-y-2">
+              <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">{item.title}</p>
+              <p>{item.content}</p>
+            </div>
           </div>
         ))}
       </div>
