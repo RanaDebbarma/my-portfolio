@@ -34,9 +34,9 @@
 }
 
 .dark {
-  --background: hsl(210, 60%, 9%);
+  --background: hsl(210, 60%, 7%);
   --foreground: hsl(0, 0%, 100%, 0.81);
-  --secondary: hsl(0, 100%, 100%, 0.05);
+  --secondary: hsl(0, 100%, 100%, 0.03);
   --accent: oklch(69.6% 0.17 162.48);
   --highlightedCard: hsl(0, 0%, 100%, 0.7);
   --invert-font: hsl(0, 0%, 0%);
