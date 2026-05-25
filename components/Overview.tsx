@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Overview = () => {
   return (
-    <div className="shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-8 lg:w-120 border border-foreground/16 bg-foreground/5 w-full rounded-3xl shrink-0 p-4 sm:p-8">
+    <div className="shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-8 lg:w-120 border border-foreground/16 bg-secondary w-full rounded-3xl shrink-0 p-4 sm:p-8">
       <h2 className="uppercase tracking-widest">Quick Overview</h2>
 
       <div>

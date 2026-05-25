@@ -11,13 +11,13 @@ const about = () => {
   return (
     <div className="flex flex-col gap-8">
       {/* Introduction */}
-      <Wrapper className="space-y-2 p-6 bg-secondary">
+      <div className="space-y-2 p-4 bg-">
         <h3 className="tracking-widest uppercase font-semibold font-sans text-muted">About</h3>
         <div className="space-y-4">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold headline-font">{ProfileData.about.heading}</h1>
+          <h1 className="text-3xl sm:text-3xl lg:text-4xl font-bold headline-font">{ProfileData.about.heading}</h1>
           <p>{ProfileData.about.summary}</p>
         </div>
-      </Wrapper>
+      </div>
 
       {/* education */}
       <Wrapper className="bg-secondary p-6 space-y-4">

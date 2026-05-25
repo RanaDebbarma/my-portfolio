@@ -1,12 +1,11 @@
 import Button from "@/components/Button"
 import Overview from "@/components/Overview"
 import Stack from "@/components/Stack"
-import Wrapper from "@/components/ui/Wrapper"
 import { ProfileData } from "@/lib/data"
 
 const home = () => {
   return (
-    <Wrapper className="bg-secondary p-4 md:p-8 lg:p-12">
+    <div className="p-4 md:p-8 lg:p-12">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* section1 */}
         <div className="grow flex flex-col gap-8">
@@ -16,7 +15,7 @@ const home = () => {
               Open for frontend roles
             </div>
             {/* Availability */}
-            <div className="uppercase border border-emerald-500/50 bg-emerald-500/6 text-emerald-500/80 tracking-widest w-fit px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+            <div className="uppercase border border-emerald-500/50 bg-emerald-500/6 text-emerald-600/90 tracking-widest w-fit px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
               available
               <div className="relative inline-block bg-emerald-500/50 rounded-full h-3 w-3">
                 <div className="absolute inline-block animate-ping bg-emerald-500/50 rounded-full h-3 w-3"></div>
@@ -51,7 +50,7 @@ const home = () => {
         {/* Overview */}
         <Overview />
       </div>
-    </Wrapper>
+    </div>
   )
 }
 export default home
