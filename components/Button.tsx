@@ -7,21 +7,21 @@ const Button = ({ children, href }: { children: React.ReactNode, href?: string }
   if (href === undefined) {
     return (
       <button
-        className="active:scale-95 hover:scale-105 isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer"
+        className="active:scale-98 hover:scale-104 hover:outline-accent/50 hover:outline isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer transition-transform"
         style={{
           transitionDuration: "300ms",
           transitionTimingFunction: "ease-in-out"
         }}
       >
         {children}
-        <div className="absolute -z-10 top-0 left-0 w-full h-full group-hover:bg-emerald-500/30 transition-colors duration-300 ease-in-out"></div>
+        <div className="absolute -z-10 top-0 left-0 w-full h-full group-hover:bg-accent/50 transition-all duration-300 ease-in-out"></div>
       </button>
     )
   }
   else
     return (
       <Link href={href}
-        className="active:scale-95 hover:scale-105 hover:outline-accent/50 hover:outline isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer transition-transform"
+        className="active:scale-98 hover:scale-104 hover:outline-accent/50 hover:outline isolate group relative overflow-hidden convex bg-foreground rounded-full px-4 py-3 cursor-pointer transition-transform"
         style={{
           transitionDuration: "300ms",
           transitionTimingFunction: "ease-in-out"

@@ -30,7 +30,7 @@ const NavBar = () => {
           {activeTab === nav.name &&
             <motion.div
               layoutId="active-pill"
-              className="absolute inset-0 bg-foreground convex"
+              className="absolute inset-0 z-10 bg-white mix-blend-difference convex"
               style={{
                 borderRadius: 9999
               }}
@@ -42,7 +42,7 @@ const NavBar = () => {
           {/* text */}
           <div className={`${activeTab === nav.name
             ? '' : 'hover:text-teal-600'
-            } relative z-10 px-3 py-1 font-medium rounded-full capitalize text-white mix-blend-difference transition-all duration-100 ease-in`}>
+            } relative px-3 py-1 font-medium rounded-full capitalize text-foreground transition-all duration-100 ease-in`}>
             {nav.name}
           </div>
         </Link>

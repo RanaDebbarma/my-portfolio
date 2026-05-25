@@ -2,16 +2,17 @@ import Button from "@/components/Button"
 import Overview from "@/components/Overview"
 import Stack from "@/components/Stack"
 import { ProfileData } from "@/lib/data"
+import { arrowSvg, mailSvg } from "@/lib/svgs"
 
 const home = () => {
   return (
-    <div className="p-4 md:p-8 lg:p-12">
+    <div className="p-4 md:px-8 lg:px-12">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* section1 */}
         <div className="grow flex flex-col gap-8">
           {/* top bar */}
           <div className="flex gap-4">
-            <div className="border border-foreground/30 bg-foreground/5 rounded-full px-2 py-1 text-sm font-medium font-sans">
+            <div className="border border-foreground/30 bg-secondary text-foreground/80 rounded-full px-2 py-1 text-sm font-medium font-sans">
               Open for frontend roles
             </div>
             {/* Availability */}
@@ -36,8 +37,26 @@ const home = () => {
               </div>
               {/* buttons */}
               <div className="flex gap-4 justify-start">
-                <Button href="/projects"><p className="text-background text-md font-semibold">Explore projects</p></Button>
-                <Button href="/contact"><p className="text-background text-md font-semibold">Contact me</p></Button>
+                <Button href="/projects">
+                  <div className="flex justify-center items-center gap-1">
+                    <p className="grow text-background text-md font-semibold font-sans">
+                      Explore projects
+                    </p>
+                    <div className="fill-background w-5">
+                      {arrowSvg}
+                    </div>
+                  </div>
+                </Button>
+                <Button href="/contact">
+                  <div className="flex justify-center items-center gap-1">
+                    <div className="fill-background w-5">
+                      {mailSvg}
+                    </div>
+                    <p className="grow text-background text-md font-semibold font-sans">
+                      Contact me
+                    </p>
+                  </div>
+                </Button>
               </div>
             </div>
             {/* stacks */}

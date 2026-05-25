@@ -74,5 +74,5 @@ body {
 }
 
 .footerBg {
-  background-image: linear-gradient(var(--color-secondary), transparent 60%);
+  background-image: linear-gradient(var(--color-secondary), transparent 50%);
 }
