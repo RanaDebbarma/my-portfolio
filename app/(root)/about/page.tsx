@@ -1,3 +1,4 @@
+import { GradientBg } from "@/components/BgComp"
 import Wrapper from "@/components/ui/Wrapper"
 import { ProfileData } from "@/lib/data"
 
@@ -50,8 +51,11 @@ const about = () => {
           <p className="opacity-80">{ProfileData.about.workingStyle.summary}</p>
         </Wrapper>
         {/* current goal */}
-        <Wrapper className="bg-highlightedCard p-6 space-y-4">
-          <h4 className="tracking-widest uppercase text-sm text-background">{ProfileData.about.currentGoal.title}</h4>
+        <Wrapper className="relative overflow-hidden isolate bg-highlightedCard/90 p-6 space-y-4">
+          <div className="absolute w-full h-full top-0 right-0 mix-blend-hard-light">
+            <GradientBg/>
+          </div>
+          <h4 className="tracking-widest uppercase text-md text-background">{ProfileData.about.currentGoal.title}</h4>
           <p className="font-bold text-invertFont">{ProfileData.about.currentGoal.heading}</p>
           <p className="text-invertFont">{ProfileData.about.currentGoal.summary}</p>
         </Wrapper>
