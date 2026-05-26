@@ -30,7 +30,12 @@ const projects = () => {
             className="flex flex-col gap-4 p-6 bg-secondary hover:border-accent"
           >
             {/* project preview */}
-            <div className="border border-wrapper-border/30 rounded-2xl overflow-hidden">
+            <Link
+              href={item.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-wrapper-border/30 rounded-2xl overflow-hidden"
+            >
               <Image
                 className="hover:scale-110 transition-transform duration-800 w-full h-auto object-cover"
                 src={item.image}
@@ -38,7 +43,7 @@ const projects = () => {
                 height={500}
                 width={500}
               />
-            </div>
+            </Link>
             {/* project contents */}
             <div className="flex flex-col gap-4 grow">
               <p className="font-light text-2xl text-foreground/90 font-sans tracking-wide">

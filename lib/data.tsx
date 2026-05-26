@@ -8,8 +8,8 @@ export const ProfileData = {
 
   personalInfo: {
     name: "Rana Debbarma",
-    email: "rana.debbarma@gmail.com",
-    phone: "+91-8075432678",
+    email: "ranadebbarma2001@gmail.com",
+    phone: "+91-8415058403",
     address: "Agartala, India",
   },
 
@@ -125,4 +125,9 @@ export const ProfileData = {
       },
     ],
   },
+
+  contact: {
+    heading: "Let’s build something clean, fast, and user-focused.",
+    summary: "If you’re hiring for a frontend role, want to collaborate on a project, or just want to connect, this section gives you a clear way to reach out.",
+  }
 };

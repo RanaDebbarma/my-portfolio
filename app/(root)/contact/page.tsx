@@ -1,4 +1,5 @@
 import CustomHR from "@/components/ui/CustomTags"
+import { ProfileData } from "@/lib/data"
 
 const contact = () => {
   return (
@@ -7,8 +8,8 @@ const contact = () => {
       <div className="space-y-2 p-4 bg-">
         <h3 className="tracking-widest uppercase font-semibold font-sans text-muted">Contact</h3>
         <div className="space-y-4">
-          <h1 className="text-3xl sm:text-3xl lg:text-4xl font-bold headline-font">{}</h1>
-          <p>{}</p>
+          <h1 className="text-3xl sm:text-3xl lg:text-4xl font-bold headline-font">{ProfileData.contact.heading}</h1>
+          <p>{ProfileData.contact.summary}</p>
         </div>
       </div>
       <CustomHR />
