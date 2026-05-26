@@ -18,7 +18,7 @@ const Overview = () => {
       image: projects[0]?.image
     }
   );
-  const delay = 3.14;
+  const delay = 6;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -85,7 +85,7 @@ const Overview = () => {
               {projectData.title}
             </p>
           </motion.div>
-          <div className="relative border border-wrapper-border/30 rounded-2xl h-56 w-full overflow-hidden">
+          <div className="relative border border-wrapper-border/30 rounded-2xl h-56 w-full bg-black overflow-hidden">
             <AnimatePresence>
               <motion.div
                 className="absolute inset-0"
