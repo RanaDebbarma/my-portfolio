@@ -7,7 +7,7 @@ import { arrowSvg, mailSvg } from "@/lib/svgs"
 const home = () => {
   return (
     <div className="p-4 md:px-8 lg:px-12">
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col md:flex-row gap-8">
         {/* section1 */}
         <div className="grow flex flex-col gap-8">
           {/* top bar */}

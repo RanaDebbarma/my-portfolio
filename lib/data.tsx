@@ -81,28 +81,48 @@ export const ProfileData = {
         stack: ["Git", "Github", "VS Code", "vercel"]
       },
       database: {
-        title: "Database technology (learning)",
+        title: "Database (learning)",
         stack: ["MongoDB", "PostgreSQL", "Prisma"],
       },
       backend: {
-        title: "Backend framework (learning)",
+        title: "Backend (learning)",
         stack: ["Node.js", "Express.js"]
       },
     }
   },
 
   projects: {
-    project1: {
-      name: "Personal Website",
-      description: "A personal website built using Next.js and Tailwind CSS.",
-      technologies: ["Next.js", "Tailwind CSS"],
-      link: "https://github.com/rana-debbarma/personal-website",
-    },
-    project2: {
-      name: "E-commerce Website",
-      description: "An e-commerce website built using React and Node.js.",
-      technologies: ["React", "Node.js"],
-      link: "https://github.com/rana-debbarma/e-commerce-website",
-    },
+    heading: "Focused builds with practical interaction patterns.",
+    summary: "Each project card keeps the story concrete: what it does, what was built, and what technology shaped it.",
+    cards: [
+      {
+        image: "/assets/projects/Portfolio(Dark).png",
+        title: "Portfolio Website",
+        description: "A multi-page personal portfolio with routed sections, animated transitions, and structured career information.",
+        technologies: ["Next.js", "Typescript", "Tailwind CSS", "Framer Motion"],
+        bullets: [
+          "Created separate pages for profile, skills, projects, education, and contact",
+          "Designed a refreshed overview card with practical career signals",
+          "Used reusable data-driven sections",
+          "Added motion while keeping the interface focused on user interaction",
+        ],
+        repo: "https://github.com/RanaDebbarma/my-portfolio",
+        live: "https://rana-debbarma-portfolio.vercel.app",
+      },
+      {
+        image: "/assets/projects/KanbanBoard.png",
+        title: "Kanban Board",
+        description: "A task board for organizing work into columns with persistent local storage.",
+        technologies: ["React", "LocalStorage", "Context API", "Reducer"],
+        bullets: [
+          "Built drag and drop task movement",
+          "Added custom theme settings",
+          "Managed app state with context and reducer",
+          "Stored board data locally in the browser"
+        ],
+        repo: "https://github.com/RanaDebbarma/Kanban-Board",
+        live: "https://kanban-board-five-mu-44.vercel.app",
+      },
+    ],
   },
 };

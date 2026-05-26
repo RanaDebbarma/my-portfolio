@@ -1,6 +1,8 @@
-const Wrapper = ({ children, className  }: { children: React.ReactNode, className?: string }) => {
+const Wrapper = ({ children, className }: { children: React.ReactNode, className?: string }) => {
   return (
-    <div className={`${className} border border-foreground/10 shadow-[0_8px_24px_rgba(0,0,0,0.2)] rounded-4xl`}>
+    <div
+      className={`${className} border border-wrapper-border/30 shadow-[0_8px_24px_rgba(0,0,0,0.2)] rounded-4xl`}
+    >
       {children}
     </div>
   )

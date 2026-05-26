@@ -14,7 +14,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </div>
       <div className="relative mx-auto pt-4 max-w-6xl w-[95%] h-full flex flex-col gap-4">
         {/* navigation */}
-        <div className="shrink-0 border border-foreground/10 bg-secondary shadow-[0_4px_12px_rgba(0,0,0,0.2)] rounded-full z-10 w-full px-2 sm:px-4 py-3 flex gap-2 justify-between items-center overflow-auto scrollbar-none">
+        <div className="shrink-0 border border-wrapper-border/20 bg-secondary shadow-[0_4px_12px_rgba(0,0,0,0.2)] rounded-full z-10 w-full px-2 sm:px-4 py-3 flex gap-2 justify-between items-center overflow-auto scrollbar-none">
           {/* LOGO */}
           <div className="grow">
             <Logo />
@@ -32,7 +32,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         >
           {children}
         </div>
-        <footer className="text-sm flex justify-center items-center rounded-full border-t border-foreground/10 p-8 text-muted shadow-[0_-16px_20px_rgba(0,0,0,0.07)]">
+        <footer className="text-sm flex justify-center items-center rounded-full border-t border-wrapper-border/20 p-8 text-muted shadow-[0_-16px_20px_rgba(0,0,0,0.07)]">
           <p>&copy; 2026 {ProfileData.personalInfo.name}. All rights reserved.</p>
         </footer>
       </div>

@@ -4,7 +4,7 @@ import { TiltCard } from "./tilt-card"
 
 const Overview = () => {
   return (
-    <div className="relative shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-6 lg:w-120 border border-foreground/16 bg-secondary w-full rounded-3xl shrink-0 p-6 sm:p-8">
+    <div className="relative shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-6 md:w-100 lg:w-120 h-fit border border-wrapper-border/30 bg-secondary w-full rounded-3xl shrink-0 p-6 sm:p-8 transition-all duration-300">
       {/* title */}
       <h2 className="uppercase tracking-widest">Quick Overview</h2>
       {/* sub-logo */}
@@ -25,12 +25,12 @@ const Overview = () => {
             strength={8}
           >
             <div
-              className="relative overflow-hidden group border border-foreground/10 hover:border-accent/30 flex flex-row-reverse sm:flex-col gap-3 justify-between p-6 sm:p-4 bg-background rounded-2xl"
+              className="relative overflow-hidden group border border-foreground/10 hover:border-accent/80 flex flex-row-reverse sm:flex-col gap-3 justify-between p-6 sm:p-4 bg-background rounded-2xl"
             >
-              <div className="absolute group-hover:bg-accent/1 mix-blend-hard-light inset-0"></div>
+              <div className="absolute group-hover:bg-accent/5 mix-blend-hard-light inset-0"></div>
               {/* svg icon */}
               <div className="flex items-center">
-                <div className="min-h-8 h-10 fill-foreground/80 group-hover:fill-accent/80 p-2.5 inline-block bg-secondary border border-foreground/10 rounded-xl">
+                <div className="min-h-8 h-10 fill-foreground/80 group-hover:fill-accent p-2.5 inline-block bg-secondary border border-foreground/10 rounded-xl">
                   {item.svg}
                 </div>
               </div>
@@ -50,11 +50,11 @@ const Overview = () => {
       <div className="flex-1 flex flex-col justify-center items-center">
         <div className="rounded-2xl">
           {/* project title */}
-          <h4 className="border-t border-foreground/20 py-2 w-full text-center font-sans tracking-wide text-muted rounded-2xl">
+          <h4 className="border-t border-wrapper-border/30 py-2 w-full text-center font-sans tracking-wide text-muted rounded-2xl">
             Kanban board
           </h4>
           {/* project image */}
-          <div className="overflow-hidden border border-foreground/20 rounded-2xl">
+          <div className="overflow-hidden border border-wrapper-border/30 rounded-2xl">
             <Image
               className="hover:scale-110 transition-transform duration-800 w-full h-auto object-cover rounded-2xl"
               src="/assets/projects/KanbanBoard.png"

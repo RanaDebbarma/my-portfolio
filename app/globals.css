@@ -9,9 +9,10 @@
 :root {
   --background: hsl(40, 0%, 85%);
   --foreground: #171717;
+  --wrapper-border: #171717;
   --secondary: hsl(0, 0%, 100%, 0.4);
   /* --accent: hsl(19, 80%, 30%); */
-  --accent: oklch(69.6% 0.17 162.48);
+  --accent: hsl(160, 100%, 37%);
   --highlightedCard: hsl(0, 0%, 0%, 0.9);
   --invert-font: hsl(0, 0%, 100%, 0.8);
 
@@ -31,6 +32,7 @@
   --color-secondary: var(--secondary);
   --color-muted: var(--muted-text);
   --color-accent: var(--accent);
+  --color-wrapper-border: var(--wrapper-border);
 
   --color-highlightedCard: var(--highlightedCard);
   --color-invertFont: var(--invert-font);
@@ -44,8 +46,9 @@
 .dark {
   --background: hsl(210, 60%, 7%);
   --foreground: hsl(0, 0%, 100%, 0.81);
+  --wrapper-border: hsl(0, 0%, 100%, 0.6);
   --secondary: hsl(0, 100%, 100%, 0.035);
-  --accent: oklch(69.6% 0.17 162.48);
+  --accent: hsl(160, 100%, 37%, 0.7);
   --highlightedCard: hsl(0, 0%, 100%, 0.7);
   --invert-font: hsl(0, 0%, 0%);
 
