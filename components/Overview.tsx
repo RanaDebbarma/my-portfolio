@@ -22,7 +22,7 @@ const Overview = () => {
         {ProfileData.overview.cards.map((item, index) => (
           <TiltCard
             key={index}
-            strength={5}
+            strength={8}
           >
             <div
               className="relative overflow-hidden group border border-foreground/10 hover:border-accent/30 flex flex-row-reverse sm:flex-col gap-3 justify-between p-6 sm:p-4 bg-background rounded-2xl"
@@ -54,13 +54,15 @@ const Overview = () => {
             Kanban board
           </h4>
           {/* project image */}
-          <Image
-            className="w-full h-auto object-cover border border-foreground/20 rounded-2xl"
-            src="/assets/projects/KanbanBoard.png"
-            alt="kanban-board"
-            width={500}
-            height={500}
-          />
+          <div className="overflow-hidden border border-foreground/20 rounded-2xl">
+            <Image
+              className="hover:scale-110 transition-transform duration-800 w-full h-auto object-cover rounded-2xl"
+              src="/assets/projects/KanbanBoard.png"
+              alt="kanban-board"
+              width={500}
+              height={500}
+            />
+          </div>
         </div>
       </div>
     </div>
