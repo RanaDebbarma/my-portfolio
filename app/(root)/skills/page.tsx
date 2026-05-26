@@ -1,4 +1,3 @@
-import { GradientBg } from "@/components/BgComp"
 import CustomHR from "@/components/ui/CustomTags"
 import Wrapper from "@/components/ui/Wrapper"
 import { ProfileData } from "@/lib/data"
@@ -18,11 +17,11 @@ const skills = () => {
       </div>
       <CustomHR />
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 p-4 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {Object.entries(skillData.cards).map((card, index) => (
           <Wrapper
             key={index}
-            className="bg-secondary flex flex-col gap-4 p-6"
+            className="bg-secondary flex flex-col gap-4 sm:p-6 p-4"
           >
             <div className="flex justify-between items-center">
               <p className="text-sm text-muted">{index + 1}.</p>
