@@ -7,7 +7,7 @@ import ThemeProvider from "@/providers/ThemeProvider";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative h-screen w-screen overflow-y-auto scrollbar-none scrollbar-thumb-foreground/20">
+    <div className="relative h-screen w-screen">
       {/* background gradient */}
       <div className="fixed top-0 right-0 h-screen w-screen">
         <GradientBg />

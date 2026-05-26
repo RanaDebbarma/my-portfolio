@@ -1,4 +1,4 @@
-import { TiltCard } from "@/components/tilt-card"
+// import { TiltCard } from "@/components/tilt-card"
 import CustomHR from "@/components/ui/CustomTags"
 import Wrapper from "@/components/ui/Wrapper"
 import { ProfileData } from "@/lib/data"
@@ -75,12 +75,16 @@ const projects = () => {
             <div className="flex gap-4 font-sans font-semibold text-sm text-foreground/80">
               <Link
                 href={item.repo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border border-wrapper-border/30 hover:border-accent rounded-full grid place-items-center px-4 py-2 transition duration-300"
               >
                 view code
               </Link>
               <Link
                 href={item.live}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group border border-wrapper-border/30 hover:border-accent bg-background/50 rounded-full px-4 py-2 transition duration-300"
               >
                 <span className="flex items-center gap-2">
