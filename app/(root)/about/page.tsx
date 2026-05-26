@@ -1,4 +1,5 @@
 import { GradientBg } from "@/components/BgComp"
+import CustomHR from "@/components/ui/CustomTags"
 import Wrapper from "@/components/ui/Wrapper"
 import { ProfileData } from "@/lib/data"
 
@@ -19,6 +20,9 @@ const about = () => {
           <p>{ProfileData.about.summary}</p>
         </div>
       </div>
+
+      {/* hr comp */}
+      <CustomHR />
 
       {/* education */}
       <Wrapper className="bg-secondary p-6 space-y-4">
@@ -53,7 +57,7 @@ const about = () => {
         {/* current goal */}
         <Wrapper className="relative overflow-hidden isolate bg-highlightedCard/90 p-6 space-y-4">
           <div className="absolute w-full h-full top-0 right-0 mix-blend-hard-light">
-            <GradientBg/>
+            <GradientBg />
           </div>
           <h4 className="tracking-widest uppercase text-md text-background">{ProfileData.about.currentGoal.title}</h4>
           <p className="font-bold text-invertFont">{ProfileData.about.currentGoal.heading}</p>

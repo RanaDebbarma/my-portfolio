@@ -29,12 +29,12 @@ export const ProfileData = {
       {
         title: "career direction",
         content: "Full-stack",
-        svg: <svg className="h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>,
+        svg: <svg className="h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" /></svg>,
       },
       {
         title: "Based in",
         content: "Agartala, India",
-        svg: <svg className="h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>,
+        svg: <svg className="h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" /></svg>,
       },
     ],
   },
@@ -69,11 +69,26 @@ export const ProfileData = {
   },
 
   skills: {
-    frontend: ["React", "Next.js", "Tailwind CSS"],
-    backend: ["Node.js", "Express.js"],
-    database: ["MongoDB", "PostgreSQL"],
-    language: ["JavaScript", "TypeScript"],
-    tools: ["Git", "VS Code"],
+    heading: "The current stack is lean, useful, and growing.",
+    summary: "The focus is on tools that help turn designs into responsive, maintainable user interfaces.",
+    cards: {
+      frontend: {
+        title: "Core frontend",
+        stack: ["React", "Next.js", "Tailwind", "Typescript"]
+      },
+      tools: {
+        title: "Devtools & workflow",
+        stack: ["Git", "Github", "VS Code", "vercel"]
+      },
+      database: {
+        title: "Database technology (learning)",
+        stack: ["MongoDB", "PostgreSQL", "Prisma"],
+      },
+      backend: {
+        title: "Backend framework (learning)",
+        stack: ["Node.js", "Express.js"]
+      },
+    }
   },
 
   projects: {
