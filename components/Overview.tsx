@@ -1,5 +1,6 @@
 import { ProfileData } from "@/lib/data"
 import Image from "next/image"
+import { TiltCard } from "./tilt-card"
 
 const Overview = () => {
   return (
@@ -17,25 +18,30 @@ const Overview = () => {
         <p className="text-sm text-muted">{ProfileData.position} based in {ProfileData.personalInfo.address}</p>
       </div>
       {/* sub-cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {ProfileData.overview.cards.map((item, index) => (
-          <div
+          <TiltCard
             key={index}
-            className="concave border-0 border-foreground/10 flex flex-row-reverse sm:flex-col gap-3 justify-between p-6 sm:p-4 bg-background rounded-2xl"
+            strength={5}
           >
-            {/* svg icon */}
-            <div className="flex items-center">
-              <div className="min-h-8 h-10 fill-foreground/80 p-2.5 inline-block bg-secondary border border-foreground/10 rounded-xl">
-                {item.svg}
+            <div
+              className="relative overflow-hidden group border border-foreground/10 hover:border-accent/30 flex flex-row-reverse sm:flex-col gap-3 justify-between p-6 sm:p-4 bg-background rounded-2xl"
+            >
+              <div className="absolute group-hover:bg-accent/1 mix-blend-hard-light inset-0"></div>
+              {/* svg icon */}
+              <div className="flex items-center">
+                <div className="min-h-8 h-10 fill-foreground/80 group-hover:fill-accent/80 p-2.5 inline-block bg-secondary border border-foreground/10 rounded-xl">
+                  {item.svg}
+                </div>
+              </div>
+              <div className="grow space-y-2">
+                <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">
+                  {item.title}
+                </p>
+                <p>{item.content}</p>
               </div>
             </div>
-            <div className="grow space-y-2">
-              <p className="uppercase text-xs tracking-widest font-sans font-medium text-muted">
-                {item.title}
-              </p>
-              <p>{item.content}</p>
-            </div>
-          </div>
+          </TiltCard>
         ))}
       </div>
 
