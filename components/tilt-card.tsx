@@ -6,10 +6,11 @@ import type { ReactNode } from "react";
 type TiltCardProps = {
   children: ReactNode;
   className?: string;
+  contentClassName?: string;
   strength?: number;
 };
 
-export function TiltCard({ children, className, strength = 10 }: TiltCardProps) {
+export function TiltCard({ children, className, contentClassName, strength = 10 }: TiltCardProps) {
   const pointerX = useMotionValue(0);
   const pointerY = useMotionValue(0);
 
@@ -24,12 +25,14 @@ export function TiltCard({ children, className, strength = 10 }: TiltCardProps) 
 
   return (
     <motion.div
-      className={className}
+      className={`${className}`}
       style={{
         rotateX,
         rotateY,
         transformPerspective: 900,
         transformStyle: "preserve-3d",
+        // transform: "perspective(900px)",
+        // backfaceVisibility: "hidden",
       }}
       // whileHover={{ scale: 1.015 }}
       whileHover={{ scale: 1 }}
@@ -48,7 +51,12 @@ export function TiltCard({ children, className, strength = 10 }: TiltCardProps) 
         pointerY.set(0);
       }}
     >
-      <div style={{ transform: "translateZ(24px)" }}>{children}</div>
+      <div
+        className={contentClassName}
+        style={{ transform: "translateZ(24px)" }}
+      >
+        {children}
+      </div>
     </motion.div>
   );
 }

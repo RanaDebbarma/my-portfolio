@@ -1,5 +1,4 @@
 import CustomHR from "@/components/ui/CustomTags"
-import Wrapper from "@/components/ui/Wrapper"
 import { ProfileData } from "@/lib/data"
 import { TiltCard } from "@/components/tilt-card"
 
@@ -9,7 +8,7 @@ const skills = () => {
   return (
     <div className="flex flex-col gap-8">
       {/* Introduction */}
-      <div className="space-y-2 p-4 bg-">
+      <div className="space-y-2 p-4">
         <p className="tracking-widest uppercase font-semibold font-sans text-muted">
           Skills
         </p>
@@ -22,40 +21,31 @@ const skills = () => {
       </div>
       <CustomHR />
       {/*skill Cards */}
-      <div className="grid grid-cols-1 p-4 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 p-4 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {Object.entries(skillData.cards).map((card, index) => (
           <TiltCard
             key={index}
-            strength={5}
-            className="h-fit"
+            className="h-fit group/card bg-secondary hover:border-accent sm:p-6 p-4 border border-wrapper-border/30 shadow-[0_8px_24px_rgba(0,0,0,0.2)] rounded-4xl"
+            contentClassName="flex flex-col gap-3"
           >
-            <Wrapper
-              className="bg-secondary hover:border-accent flex flex-col gap-4 sm:p-6 p-4"
-            >
-              <div className="flex justify-between items-center">
-                <p className="text-sm text-muted">{index + 1}.</p>
-                <div className="text-xs bg-background border border-foreground/10 px-2 py-1 rounded-xl self-center">
-                  {card[1].stack.length} skills
-                </div>
+            <div className="flex justify-between items-center">
+              <p className="text-sm text-muted group-hover/card:text-accent">{index + 1}.</p>
+              <div className="text-xs bg-background border border-wrapper-border/0 px-2 py-1 rounded-xl self-center">
+                {card[1].stack.length} skills
               </div>
-              <p className="tracking-wide uppercase text-sm text-muted">
-                {card[1].title}
-              </p>
+            </div>
+            <p className="tracking-wide uppercase text-sm text-muted">
+              {card[1].title}
+            </p>
 
-              {card[1].stack.map((item, index) => (
-                // <TiltCard
-                //   key={index}
-                // >
-                <div
-                  key={index}
-                  className="text-foreground font-sans flex items-center gap-4 border border-foreground/10 hover:border-accent bg-background px-4 py-2 rounded-2xl"
-                >
-                  {item}
-                </div>
-                // </TiltCard>
-
-              ))}
-            </Wrapper>
+            {card[1].stack.map((item, index) => (
+              <div
+                key={index}
+                className="hover:-translate-y-1 transition-transform duration-300 text-foreground font-sans flex items-center gap-4 border border-wrapper-border/20 hover:border-accent bg-background px-4 py-2 rounded-2xl"
+              >
+                {item}
+              </div>
+            ))}
           </TiltCard>
         ))}
       </div>

@@ -14,7 +14,7 @@ const about = () => {
   return (
     <div className="flex flex-col gap-8">
       {/* Introduction */}
-      <div className="space-y-2 p-4 bg-">
+      <div className="space-y-2 p-4">
         <p className="tracking-widest uppercase font-semibold font-sans text-muted">
           About
         </p>

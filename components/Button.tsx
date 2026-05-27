@@ -28,7 +28,7 @@ const Button = ({ children, href }: { children: React.ReactNode, href?: string }
         }}
       >
         {children}
-        <div className="absolute -z-10 top-0 left-0 w-full h-full group-hover:bg-accent/50 transition-all duration-300 ease-in-out"></div>
+        <div className="absolute -z-10 top-0 left-0 w-full h-full group-hover:bg-accent/80 mix-blend-hard-light transition-all duration-300 ease-in-out"></div>
       </Link>
     )
 }
