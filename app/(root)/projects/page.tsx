@@ -27,17 +27,17 @@ const projects = () => {
           // >
           <Wrapper
             key={index}
-            className="flex flex-col gap-4 p-6 bg-secondary hover:border-accent"
+            className="group/card flex flex-col gap-4 p-6 bg-secondary hover:border-accent"
           >
             {/* project preview */}
             <Link
               href={item.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-wrapper-border/30 rounded-2xl overflow-hidden"
+              className="border card border-wrapper-border/30 rounded-2xl overflow-hidden"
             >
               <Image
-                className="hover:scale-110 transition-transform duration-800 w-full h-auto object-cover"
+                className="group-hover/card:scale-110 transition-transform duration-800 w-full h-auto object-cover"
                 src={item.image}
                 alt={item.title}
                 height={500}
@@ -96,7 +96,7 @@ const projects = () => {
                 <span className="flex items-center gap-2">
                   Live link
                   <div className="relative inline-block group-hover:bg-accent bg-red-500/80 rounded-full h-2 w-2 transition duration-300">
-                    <div className="absolute inline-block animate-ping group-hover:bg-accent bg-red-500/80 rounded-full h-2 w-2 transition duration-300"></div>
+                    <div className="absolute inline-block group-hover/card:animate-ping group-hover:bg-accent bg-red-500/80 rounded-full h-2 w-2 transition duration-300"></div>
                   </div>
                 </span>
               </Link>
