@@ -12,7 +12,7 @@
   --wrapper-border: #171717;
   --secondary: hsl(0, 0%, 100%, 0.4);
   /* --accent: hsl(19, 80%, 30%); */
-  --accent: hsl(160, 100%, 37%);
+  --accent: hsl(170, 100%, 32%);
   --highlightedCard: hsl(0, 0%, 0%, 0.9);
   --invert-font: hsl(0, 0%, 100%, 0.8);
 
@@ -48,7 +48,7 @@
   --foreground: hsl(0, 0%, 100%, 0.81);
   --wrapper-border: hsl(0, 0%, 100%, 0.6);
   --secondary: hsl(0, 100%, 100%, 0.035);
-  --accent: hsl(160, 100%, 37%, 0.7);
+  --accent: hsl(170, 100%, 37%, 0.7);
   --highlightedCard: hsl(0, 0%, 100%, 0.7);
   --invert-font: hsl(0, 0%, 0%);
 
