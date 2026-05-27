@@ -95,10 +95,10 @@ const Overview = () => {
                 }}
               >
                 {/* project image */}
-                <div className="overflow-hidden">
+                <div className="h-full overflow-hidden">
                   <Image
                     onClick={() => router.push('/projects')}
-                    className="cursor-pointer hover:scale-110 transition-transform duration-800 w-full h-auto object-cover"
+                    className="cursor-pointer hover:scale-110 transition-transform duration-800 w-full h-full object-cover"
                     src={projectData.image}
                     alt={projectData.title}
                     width={500}
