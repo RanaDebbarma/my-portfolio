@@ -14,11 +14,11 @@ export function TiltCard({ children, className, contentClassName, strength = 10 
   const pointerX = useMotionValue(0);
   const pointerY = useMotionValue(0);
 
-  const rotateX = useSpring(useTransform(pointerY, [-0.5, 0.5], [strength, -strength]), {
+  const rotateX = useSpring(useTransform(pointerY, [-0.5, 0.5], [-strength, +strength]), {
     stiffness: 220,
     damping: 24,
   });
-  const rotateY = useSpring(useTransform(pointerX, [-0.5, 0.5], [-strength, strength]), {
+  const rotateY = useSpring(useTransform(pointerX, [-0.5, 0.5], [+strength, -strength]), {
     stiffness: 220,
     damping: 24,
   });
@@ -32,7 +32,7 @@ export function TiltCard({ children, className, contentClassName, strength = 10 
         transformPerspective: 900,
         transformStyle: "preserve-3d",
         // transform: "perspective(900px)",
-        // backfaceVisibility: "hidden",
+        backfaceVisibility: "hidden",
       }}
       // whileHover={{ scale: 1.015 }}
       whileHover={{ scale: 1 }}

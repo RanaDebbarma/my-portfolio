@@ -17,12 +17,12 @@ const contact = () => {
       <CustomHR />
       {/* Contact Information */}
       <div className="grow flex flex-col justify-center items-center p-4">
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {ProfileData.contact.cards.map((item, index) => (
             <TiltCard
               key={index}
-              strength={20}
-              className="relative group border border-wrapper-border/30 hover:border-accent bg-secondary hover:bg-accent/2 rounded-2xl px-6 py-5"
+              strength={-24}
+              className="relative group border border-wrapper-border/30 hover:border-accent bg-secondary hover:bg-accent/2 rounded-2xl px-4 py-4"
             >
               <Link
                 href={item.contact}
@@ -30,9 +30,9 @@ const contact = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col justify-center items-center gap-2 group-hover:scale-105 transition-transform duration-300"
                 >
-                <div className="h-10 p-2 border border-wrapper-border/50 group-hover:border-accent/80 bg-background rounded-lg fill-foreground group-hover:fill-accent">{item.icon}</div>
+                <div className="h-10 w-full p-2 border border-wrapper-border/50 group-hover:border-accent/80 bg-background rounded-lg fill-foreground group-hover:fill-accent">{item.icon}</div>
                 <p
-                  className="text-lg font-sans font-extralight tracking-wider text-foreground group-hover:text-accent"
+                  className="borde text-md font-sans font-light tracking-wider text-foreground group-hover:text-accent"
                 >
                   {item.title}</p>
               </Link>

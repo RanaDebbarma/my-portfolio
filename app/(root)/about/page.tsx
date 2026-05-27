@@ -50,10 +50,10 @@ const about = () => {
             {educationCard.map((item, index) => (
               <TiltCard
                 key={index}
-                className={`flex-${1} border border-foreground/10 bg-background rounded-2xl p-4 space-y-2`}
+                className={`flex-${1} border border-wrapper-border/20 hover:border-accent group bg-background rounded-2xl p-4 space-y-2`}
               >
                 <p className="tracking-widest uppercase text-sm text-muted">{item.title}</p>
-                <p>{item.content}</p>
+                <p className="group-hover:text-accent">{item.content}</p>
               </TiltCard>
             ))}
           </div>

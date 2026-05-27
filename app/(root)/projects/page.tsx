@@ -1,6 +1,5 @@
-// import { TiltCard } from "@/components/tilt-card"
+import { TiltCard } from "@/components/tilt-card"
 import CustomHR from "@/components/ui/CustomTags"
-import Wrapper from "@/components/ui/Wrapper"
 import { ProfileData } from "@/lib/data"
 import Image from "next/image"
 import Link from "next/link"
@@ -21,13 +20,11 @@ const projects = () => {
       {/*project Cards */}
       <div className="grid grid-cols-1 p-4 md:grid-cols-2 gap-8">
         {projectData.cards.map((item, index) => (
-          // <TiltCard
-          //   key={index}
-          //   strength={2}
-          // >
-          <Wrapper
+          <TiltCard
             key={index}
-            className="group/card flex flex-col gap-4 p-6 bg-secondary hover:border-accent"
+            strength={2}
+            className="group/card px-5 py-6 lg:px-6 lg:py-7 bg-secondary hover:border-accent border border-wrapper-border/30 shadow-[0_8px_24px_rgba(0,0,0,0.2)] rounded-4xl"
+            contentClassName="flex flex-col gap-4 h-full"
           >
             {/* project preview */}
             <Link
@@ -45,7 +42,7 @@ const projects = () => {
               />
             </Link>
             {/* project contents */}
-            <div className="flex flex-col gap-4 grow">
+            <div className="px-1 flex flex-col gap-4 grow">
               <p className="font-light text-2xl text-foreground/90 font-sans tracking-wide">
                 {item.title}
               </p>
@@ -77,7 +74,7 @@ const projects = () => {
               </ul>
             </div>
             {/* links */}
-            <div className="flex gap-4 font-sans font-semibold text-sm text-foreground">
+            <div className="px-1 flex gap-4 font-sans font-semibold text-sm text-foreground">
               <Link
                 href={item.repo}
                 target="_blank"
@@ -101,8 +98,7 @@ const projects = () => {
                 </span>
               </Link>
             </div>
-          </Wrapper>
-          // </TiltCard>
+          </TiltCard>
         ))}
       </div>
 
