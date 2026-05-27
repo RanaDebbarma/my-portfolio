@@ -34,7 +34,7 @@ const Overview = () => {
   }, [projects, currentIndex]);
 
   return (
-    <div className="relative shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-6 md:w-100 lg:w-120 h-fit border border-wrapper-border/30 bg-secondary w-full rounded-3xl shrink-0 p-6 sm:p-8 transition-all duration-300">
+    <div className="relative backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.24)] flex flex-col gap-6 md:w-100 lg:w-120 h-fit border border-wrapper-border/30 bg-secondary w-full rounded-3xl shrink-0 p-6 sm:p-8 transition-all duration-300">
       {/* title */}
       <h2 className="uppercase tracking-widest">Quick Overview</h2>
       {/* sub-logo */}

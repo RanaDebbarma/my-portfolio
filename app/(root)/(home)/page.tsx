@@ -1,3 +1,4 @@
+import { GridBg } from "@/components/BgComp"
 import Button from "@/components/Button"
 import Overview from "@/components/Overview"
 import Stack from "@/components/Stack"
@@ -9,7 +10,10 @@ const home = () => {
     <div className="p-4 md:px-8 lg:px-12">
       <div className="flex flex-col md:flex-row gap-8">
         {/* section1 */}
-        <div className="grow flex flex-col gap-8">
+        <div className="grow relative flex flex-col gap-8">
+          <div className="absolute inset-0">
+            <GridBg opacity={12} />
+          </div>
           {/* top bar */}
           <div className="flex gap-4 flex-wrap">
             <div className="border border-foreground/30 bg-secondary text-foreground/80 rounded-full px-2 py-1 text-sm font-medium font-sans">

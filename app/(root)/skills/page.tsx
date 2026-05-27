@@ -23,30 +23,34 @@ const skills = () => {
       {/*skill Cards */}
       <div className="grid grid-cols-1 p-4 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {Object.entries(skillData.cards).map((card, index) => (
-          <TiltCard
+          <div
             key={index}
-            className="h-fit group/card bg-secondary hover:border-accent sm:p-6 p-4 border border-wrapper-border/30 shadow-[0_8px_24px_rgba(0,0,0,0.2)] rounded-4xl"
-            contentClassName="flex flex-col gap-3"
+            className="relative h-fit rounded-4xl backdrop-blur-md"
           >
-            <div className="flex justify-between items-center">
-              <p className="text-sm text-muted group-hover/card:text-accent">{index + 1}.</p>
-              <div className="text-xs bg-background border border-wrapper-border/0 px-2 py-1 rounded-xl self-center">
-                {card[1].stack.length} skills
+            <TiltCard
+              className="h-fit group/card relative bg-secondary hover:border-accent sm:p-6 p-4 border border-wrapper-border/30 shadow-[0_8px_24px_rgba(0,0,0,0.2)] rounded-4xl"
+              contentClassName="flex flex-col gap-3"
+            >
+              <div className="flex justify-between items-center">
+                <p className="text-sm text-muted group-hover/card:text-accent">{index + 1}.</p>
+                <div className="text-xs bg-background border border-wrapper-border/0 px-2 py-1 rounded-xl self-center">
+                  {card[1].stack.length} skills
+                </div>
               </div>
-            </div>
-            <p className="tracking-wide uppercase text-sm text-muted">
-              {card[1].title}
-            </p>
-
-            {card[1].stack.map((item, index) => (
-              <div
-                key={index}
-                className="hover:-translate-y-1 transition-transform duration-300 text-foreground font-sans flex items-center gap-4 border border-wrapper-border/20 hover:border-accent bg-background px-4 py-2 rounded-2xl"
-              >
-                {item}
-              </div>
-            ))}
-          </TiltCard>
+              <p className="tracking-wide uppercase text-sm text-muted">
+                {card[1].title}
+              </p>
+              {/* skills */}
+              {card[1].stack.map((item, index) => (
+                <div
+                  key={index}
+                  className="hover:-translate-y-1 transition-transform-shadow duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] text-foreground font-sans flex items-center gap-4 border border-wrapper-border/20 hover:border-accent bg-background px-4 py-2 rounded-2xl"
+                >
+                  {item}
+                </div>
+              ))}
+            </TiltCard>
+          </div>
         ))}
       </div>
 

@@ -93,7 +93,7 @@ const projects = () => {
                 <span className="flex items-center gap-2">
                   Live link
                   <div className="relative inline-block group-hover:bg-accent bg-red-500/80 rounded-full h-2 w-2 transition duration-300">
-                    <div className="absolute inline-block group-hover/card:animate-ping group-hover:bg-accent bg-red-500/80 rounded-full h-2 w-2 transition duration-300"></div>
+                    <div className="absolute inline-block animate-ping group-hover:bg-accent bg-red-500/80 rounded-full h-2 w-2 transition duration-300"></div>
                   </div>
                 </span>
               </Link>

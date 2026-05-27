@@ -92,6 +92,10 @@ body {
   mask-image: radial-gradient(circle, transparent 20%, black);
 }
 
+.inverseRadialMask {
+  mask-image: radial-gradient(circle, black 6.9%, transparent 69%);
+}
+
 @keyframes gradient-rotate {
   0% {
     --gradient-angle: 90deg;

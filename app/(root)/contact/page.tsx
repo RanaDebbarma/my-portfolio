@@ -1,3 +1,4 @@
+import { GridBg } from "@/components/BgComp"
 import { TiltCard } from "@/components/tilt-card"
 import CustomHR from "@/components/ui/CustomTags"
 import { ProfileData } from "@/lib/data"
@@ -16,27 +17,34 @@ const contact = () => {
       </div>
       <CustomHR />
       {/* Contact Information */}
-      <div className="grow flex flex-col justify-center items-center p-4">
+      <div className="grow relative flex flex-col justify-center items-center p-4">
+        <div className="absolute inset-0">
+          <GridBg opacity={9} />
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {ProfileData.contact.cards.map((item, index) => (
-            <TiltCard
+            <div
               key={index}
-              strength={-24}
-              className="relative group border border-wrapper-border/30 hover:border-accent bg-secondary hover:bg-accent/2 rounded-2xl px-4 py-4"
+              className="relative h-fit rounded-2xl backdrop-blur-md"
             >
-              <Link
-                href={item.contact}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col justify-center items-center gap-2 group-hover:scale-105 transition-transform duration-300"
+              <TiltCard
+                strength={-24}
+                className="relative group border border-wrapper-border/30 hover:border-accent bg-secondary hover:bg-accent/2 rounded-2xl p-3 sm:p-4"
+              >
+                <Link
+                  href={item.contact}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col justify-center items-center gap-2 group-hover:scale-105 transition-transform duration-300"
                 >
-                <div className="h-10 w-full p-2 border border-wrapper-border/50 group-hover:border-accent/80 bg-background rounded-lg fill-foreground group-hover:fill-accent">{item.icon}</div>
-                <p
-                  className="borde text-md font-sans font-light tracking-wider text-foreground group-hover:text-accent"
-                >
-                  {item.title}</p>
-              </Link>
-            </TiltCard>
+                  <div className="h-10 w-full p-2 border border-wrapper-border/50 group-hover:border-accent/80 bg-background rounded-lg fill-foreground group-hover:fill-accent">{item.icon}</div>
+                  <p
+                    className="borde text-md font-sans font-light tracking-wider text-foreground group-hover:text-accent"
+                  >
+                    {item.title}</p>
+                </Link>
+              </TiltCard>
+            </div>
           ))}
         </div>
       </div>
