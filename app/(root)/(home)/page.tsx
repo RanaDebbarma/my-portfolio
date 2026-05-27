@@ -16,10 +16,10 @@ const home = () => {
               Open for frontend roles
             </div>
             {/* Availability */}
-            <div className="uppercase border border-emerald-500/50 bg-emerald-500/6 text-emerald-600/90 tracking-widest w-fit px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+            <div className="uppercase border border-accent bg-accent/8 text-accent tracking-widest w-fit px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
               available
-              <div className="relative inline-block bg-emerald-500/50 rounded-full h-3 w-3">
-                <div className="absolute inline-block animate-ping bg-emerald-500/50 rounded-full h-3 w-3"></div>
+              <div className="relative inline-block bg-accent rounded-full h-3 w-3">
+                <div className="absolute inline-block animate-ping bg-accent rounded-full h-3 w-3"></div>
               </div>
             </div>
           </div>
