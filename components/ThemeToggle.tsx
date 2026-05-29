@@ -1,21 +1,15 @@
 "use client"
 
-import { ThemeContext } from "@/providers/ThemeProvider";
-import { useContext } from "react";
+import { useTheme } from "next-themes";
 import { TiltCard } from "./tilt-card";
 
 const ThemeToggle = () => {
-  const context = useContext(ThemeContext) as { theme: string; toggleTheme: () => void } | null;
 
-  if (!context) {
-    throw new Error("ThemeToggle must be used inside ThemeProvider");
-  }
-
-  const { theme, toggleTheme } = context;
+  const { theme, setTheme } = useTheme();
 
   return (
     <div
-      onClick={() => toggleTheme()}
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className="h-12 w-12 shrink-0 flex justify-center items-center hover:bg-accent/10 border border-foreground/20 hover:border-accent/40 group convex active:scale-95 isolate cursor-pointer relative rounded-full overflow-hidden duration-300 ease-in-out"
     >
       <TiltCard
