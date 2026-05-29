@@ -1,7 +1,7 @@
 "use client"
 
 import { ThemeContext } from "@/providers/ThemeProvider";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { TiltCard } from "./tilt-card";
 
 const ThemeToggle = () => {
@@ -12,13 +12,6 @@ const ThemeToggle = () => {
   }
 
   const { theme, toggleTheme } = context;
-
-  useEffect(() => {
-
-    document.documentElement.classList.remove("light", "dark");
-    document.documentElement.classList.add(theme);
-
-  }, [theme]);
 
   return (
     <div

@@ -44,7 +44,7 @@ const skills = () => {
               {card[1].stack.map((item, index) => (
                 <div
                   key={index}
-                  className="hover:-translate-y-1 transition-transform-shadow duration-300 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)] text-foreground font-sans flex items-center gap-4 border border-wrapper-border/20 hover:border-accent bg-background px-4 py-2 rounded-2xl"
+                  className="hover:-translate-y-1 transition-transform-shadow duration-300 text-foreground font-sans flex items-center gap-4 border border-wrapper-border/20 hover:border-accent bg-background px-4 py-2 rounded-2xl"
                 >
                   {item}
                 </div>
