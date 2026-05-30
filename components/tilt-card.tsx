@@ -33,6 +33,7 @@ export function TiltCard({ children, className, contentClassName, strength = 10 
         transformStyle: "preserve-3d",
         // transform: "perspective(900px)",
         backfaceVisibility: "hidden",
+        touchAction: "pan-y",
       }}
       // whileHover={{ scale: 1.015 }}
       whileHover={{ scale: 1 }}
